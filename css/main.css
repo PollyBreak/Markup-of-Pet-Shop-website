@@ -1,12 +1,24 @@
-body {
-  height: 100%;
-  margin: 0;
+.full-row{
+  height: 100vh;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+.intro-left{
+  height: 100%;
+  background: url("https://avatars.mds.yandex.net/i?id=67f029a21b29fb881094f276b6c6e639_l-5329796-images-thumbs&n=13");
+}
+
+.intro-right{
+  height: 100%;
+  background: linear-gradient(#FBE5C8, #fffaf7, #fff7f2, #ffede5);
+}
+
+.photo-row {
+  height: 33%;
+}
+
+.img-height{
+  max-height: 100%;
+  width: auto;
 }
 
 .first-page {
@@ -29,7 +41,7 @@ body {
   padding-top: 20%;
   margin-bottom: 0;
   color: white;
-  font-size: 600%;
+  font-size: 8vw;
   text-shadow: 5px 0 5px #156760,
   0 5px 5px #156760,
   5px 0 5px #156760,
@@ -37,9 +49,11 @@ body {
   font-family: "Book Antiqua", sans-serif;
 }
 
-.first-page-body h2{
+
+.small-letters{
+  padding-top: 4%;
   padding-left: 10%;
-  font-size: 200%;
+  font-size: 4vh;
   color: #156760;
   text-shadow:
     0.5px 0 black,
@@ -50,8 +64,13 @@ body {
 
 .heart {
   display: inline;
-  width: 60px;
+  width: 8vh;
   height: auto;
+}
+
+#hello-dog{
+  padding-top: 4vh;
+  transform: rotate(10deg);
 }
 
 .photos{
@@ -61,26 +80,14 @@ body {
   overflow: hidden;
 }
 
-#hello-dog{
-  width: 35%;
-  height: auto;
-  transform: rotate(10deg);
-  padding-top: 3%;
-  padding-left: 60%;
-}
+
 
 #hello-rabbit{
-  width: 35%;
-  height: auto;
   transform: rotate(-10deg);
-  padding-left: 10%;
 }
 
 #hello-cat{
-  width: 35%;
-  height: auto;
   transform: rotate(5deg);
-  padding-left: 55%;
 }
 
 .contents {
