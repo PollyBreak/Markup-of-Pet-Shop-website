@@ -4,7 +4,7 @@
 
 .intro-left{
   height: 100%;
-  background: url("https://avatars.mds.yandex.net/i?id=67f029a21b29fb881094f276b6c6e639_l-5329796-images-thumbs&n=13");
+  background: url("https://avatars.mds.yandex.net/i?id=a9c4a649c44fe45361f93e9a305bd765_l-5222263-images-thumbs&n=13");
 }
 
 .intro-right{
@@ -32,21 +32,30 @@
    width: 60vw;
  }
 
-/*.fullscreen-with-photo{*/
-/*  background: url("https://i.pinimg.com/originals/5a/45/f2/5a45f2fed64e52329b1e2425eda9ba83.jpg") center/ cover no-repeat fixed;*/
-/*}*/
 
 .large-letters{
   padding-left: 10%;
   padding-top: 20%;
   margin-bottom: 0;
   color: white;
-  font-size: 8vw;
+  font-size: 13vh;
   text-shadow: 5px 0 5px #156760,
   0 5px 5px #156760,
   5px 0 5px #156760,
   0 5px 5px #156760;
   font-family: "Book Antiqua", sans-serif;
+}
+
+@media (min-width: 992px) {
+  .custom-lg-padding {
+    padding-top: 20%;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-xs-padding {
+    padding-top: 10%;
+  }
 }
 
 
@@ -73,15 +82,6 @@
   transform: rotate(10deg);
 }
 
-.photos{
-  height: 100vh;
-  width: 40vw;
-  display: block;
-  overflow: hidden;
-}
-
-
-
 #hello-rabbit{
   transform: rotate(-10deg);
 }
@@ -89,6 +89,14 @@
 #hello-cat{
   transform: rotate(5deg);
 }
+
+.try-button{
+  font-size: 4vh;
+  background-color: white;
+  font-family: "Calibri Light";
+  border-color: #156760;
+}
+
 
 .contents {
   text-align: center;
