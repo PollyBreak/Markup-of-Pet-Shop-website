@@ -47,8 +47,6 @@
   }
 }
 
-
-
 @media (min-width: 992px) {
   .custom-lg-padding {
     padding-top: 20%;
@@ -108,7 +106,7 @@
 
 @media (max-width: 576px) {
   .custom-try-btn-sm-size {
-    font-size: 7vh;
+    font-size: 6vh;
   }
 }
 
