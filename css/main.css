@@ -38,7 +38,7 @@
   padding-top: 20%;
   margin-bottom: 0;
   color: white;
-  font-size: 13vh;
+  font-size: 6vw;
   text-shadow: 5px 0 5px #156760,
   0 5px 5px #156760,
   5px 0 5px #156760,
@@ -62,7 +62,7 @@
 .small-letters{
   padding-top: 4%;
   padding-left: 10%;
-  font-size: 4vh;
+  font-size: 2vw;
   color: #156760;
   text-shadow:
     0.5px 0 black,
@@ -91,7 +91,7 @@
 }
 
 .try-button{
-  font-size: 4vh;
+  font-size: 2vw;
   background-color: white;
   font-family: "Calibri Light";
   border-color: #156760;
