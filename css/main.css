@@ -23,16 +23,31 @@
 
 .large-letters{
   padding-left: 10%;
+  padding-right: 10%;
   padding-top: 20%;
   margin-bottom: 0;
   color: white;
-  font-size: 13vh;
+  /*font-size: 12vh;*/
   text-shadow: 5px 0 5px #156760,
   0 5px 5px #156760,
   5px 0 5px #156760,
   0 5px 5px #156760;
   font-family: "Book Antiqua", sans-serif;
 }
+
+@media (min-width: 577px) {
+  .custom-sm-size {
+    font-size: 12vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-lg-size {
+    font-size: 8vh;
+  }
+}
+
+
 
 @media (min-width: 992px) {
   .custom-lg-padding {
@@ -50,7 +65,7 @@
 .small-letters{
   padding-top: 4%;
   padding-left: 10%;
-  font-size: 2vw;
+  font-size: 4vh;
   color: #156760;
   text-shadow:
     0.5px 0 black,
@@ -79,11 +94,24 @@
 }
 
 .try-button{
-  font-size: 2vw;
+  font-size: 7vh;
   background-color: white;
   font-family: "Calibri Light";
   border-color: #156760;
 }
+
+@media (min-width: 577px) {
+  .custom-try-btn-lg-size {
+    font-size: 4vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-try-btn-sm-size {
+    font-size: 7vh;
+  }
+}
+
 
 
 .contents {
