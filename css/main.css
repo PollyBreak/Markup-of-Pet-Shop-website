@@ -1,14 +1,10 @@
-.full-row{
-  height: 100vh;
-}
-
 .intro-left{
-  height: 100%;
+  min-height: 100vh;
   background: url("https://avatars.mds.yandex.net/i?id=a9c4a649c44fe45361f93e9a305bd765_l-5222263-images-thumbs&n=13");
 }
 
 .intro-right{
-  height: 100%;
+  min-height: 100vh;
   background: linear-gradient(#FBE5C8, #fffaf7, #fff7f2, #ffede5);
 }
 
@@ -27,7 +23,7 @@
   /*padding-top: 20%;*/
   margin-bottom: 0;
   color: white;
-  /*font-size: 12vh;*/
+  /*font-size: 6vw;*/
   text-shadow: 5px 0 5px #156760,
   0 5px 5px #156760,
   5px 0 5px #156760,
@@ -36,36 +32,52 @@
 }
 
 @media (min-width: 577px) {
-  .custom-sm-size {
-    font-size: 12vh;
+  .custom-lg-size {
+    font-size: 6vw;
+    padding-left: 10%;
   }
 }
 
 @media (max-width: 576px) {
-  .custom-lg-size {
-    font-size: 8vh;
+  .custom-sm-size {
+    font-size: 14vw;
+    padding-left: 5%;
+    padding-right: 7%;
   }
 }
 
-@media (min-width: 992px) {
-  .custom-lg-padding {
-    padding-top: 20%;
-    padding-left: 10%
+@media (min-width: 577px) {
+  .custom-second-lg-size {
+    font-size: 2vw;
+    padding-left: 10%;
   }
 }
 
-@media (max-width: 992px) {
-  .custom-xs-padding {
-    padding-top: 15%;
-    padding-left: 10%
+@media (max-width: 576px) {
+  .custom-second-sm-size {
+    font-size: 5vw;
+    padding-left: 5%;
+    padding-right: 7%;
   }
 }
 
+@media (min-width: 577px) {
+  .custom-btn-lg-size {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-btn-sm-size {
+    font-size: 6vw;
+
+  }
+}
 
 .small-letters{
   padding-top: 4%;
-  padding-left: 10%;
-  font-size: 4vh;
+  /*padding-left: 10%;*/
+  /*font-size: 2vw;*/
   color: #156760;
   text-shadow:
     0.5px 0 black,
@@ -76,7 +88,7 @@
 
 .heart {
   display: inline;
-  width: 8vh;
+  width: 4vw;
   height: auto;
 }
 
@@ -94,24 +106,15 @@
 }
 
 .try-button{
-  font-size: 7vh;
   color: #555555;
   background-color: white;
   font-family: "Calibri Light";
   border-color: #156760;
 }
 
-@media (min-width: 577px) {
-  .custom-try-btn-lg-size {
-    font-size: 4vh;
-  }
-}
 
-@media (max-width: 576px) {
-  .custom-try-btn-sm-size {
-    font-size: 5vh;
-  }
-}
+
+
 
 .second-page {
   background-color: #FFF796;
@@ -132,7 +135,7 @@
 .white-letters{
   color: white;
   font-family: "Bookman Old Style", "Book Antiqua", "Courier New", sans-serif;
-  font-size: 8vh;
+  font-size: 5vw;
   text-shadow:
     2px 0 black,
     0 -2px black,
