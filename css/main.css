@@ -95,6 +95,7 @@
 
 .try-button{
   font-size: 7vh;
+  color: #555555;
   background-color: white;
   font-family: "Calibri Light";
   border-color: #156760;
@@ -108,10 +109,36 @@
 
 @media (max-width: 576px) {
   .custom-try-btn-sm-size {
-    font-size: 6vh;
+    font-size: 5vh;
   }
 }
 
+.second-page {
+  background-color: #FFF796;
+  min-height: 100vh;
+}
+
+.backgr{
+  background-color: #FFF796;
+}
+
+.my-size{
+  width: 80vw;
+  height: 80vh;
+  background-color: white;
+
+}
+
+.white-letters{
+  color: white;
+  font-family: "Bookman Old Style", "Book Antiqua", "Courier New", sans-serif;
+  font-size: 8vh;
+  text-shadow:
+    2px 0 black,
+    0 -2px black,
+    -2px 2px black,
+    0 1px black;
+}
 
 
 .contents {
@@ -128,11 +155,7 @@
     0 1px black;
 }
 
-.second-page {
-  background-color: #FFFF8A;
-  display: flex;
-  min-height: 100vh;
-}
+
 
 .second-page-body {
   width: 100vw;
