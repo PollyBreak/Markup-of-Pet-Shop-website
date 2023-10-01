@@ -1,0 +1,64 @@
+.backgr{
+  background-color: #FFF796;
+  scroll-margin-top: 65px;
+}
+
+.myfooter{
+  background-color: saddlebrown;
+}
+
+.myfooter a{
+  color: orangered;
+}
+
+.myfooter a:hover{
+  color: yellow;
+}
+
+.text-shadow {
+  text-shadow:
+    2px 0 black,
+    0 -2px black,
+    -2px 2px black,
+    0 1px black;
+}
+
+.text-size{
+  font-size: 1.5vw;
+}
+
+
+@media (min-width: 577px) {
+  .custom-lg-hd-size {
+    font-size: 6vw;
+    padding-left: 10%;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-sm-hd-size {
+    font-size: 14vw;
+    padding-left: 5%;
+    padding-right: 7%;
+  }
+}
+
+@media (min-width: 577px) {
+  .custom-lg-text-size {
+    font-family: Georgia;
+    font-size: 1.5vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-sm-text-size {
+    font-family: Georgia;
+    font-size: 3vw;
+  }
+}
+
+.navbar{
+  background-color: rgba(255,255,255,0.7);
+  backdrop-filter: blur(5px);
+  font-weight: 550;
+}

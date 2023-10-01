@@ -9,13 +9,11 @@
 }
 
 .photo-row {
-  height: 33%;
+  height: 33vh;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.img-height{
-  max-height: 100%;
-  width: auto;
-}
 
 .large-letters{
   /*padding-left: 10%;*/
@@ -112,9 +110,11 @@
   border-color: #156760;
 }
 
-
-
-
+.navbar{
+  background-color: rgba(255,255,255,0.7);
+  backdrop-filter: blur(5px);
+  font-weight: 550;
+}
 
 .second-page {
   background-color: #FFF796;
@@ -123,6 +123,7 @@
 
 .backgr{
   background-color: #FFF796;
+  scroll-margin-top: 65px;
 }
 
 .my-size{
@@ -144,97 +145,30 @@
 }
 
 
-.contents {
-  text-align: center;
-  font-size: 400%;
-  border-color: black;
-  border-width: 4px;
-  margin-bottom: 0;
-  color: white;
-  text-shadow:
-    2px 0 black,
-    0 -2px black,
-    -2px 2px black,
-    0 1px black;
+@media (min-width: 577px) {
+  .custom-adv-lg-size {
+    width: 65%;
+  }
 }
 
-
-
-.second-page-body {
-  width: 100vw;
-  display: block;
-  align-content: center;
+@media (max-width: 576px) {
+  .custom-adv-sm-size {
+    width: 100%;
+  }
 }
 
-.info {
-  width: 80%;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 2%;
-  background-color: white;
-  border-radius: 10%;
-  padding-bottom: 2%;
+.click-on-text{
+  font-size: 2vw;
 }
 
-#about-us{
-  padding-top: 4%;
-  margin-left: 5%;
-  margin-right: 5%;
-  font-family: "Bookman Old Style", "Book Antiqua", "Courier New", sans-serif;
-  font-size: 110%;
-  text-align: justify;
-}
-
-#advantages {
-  font-family: "Bookman Old Style", "Book Antiqua", "Courier New", sans-serif;
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top:0%;
-  margin-bottom:0%;
-  font-size: 180%;
-}
-
-#list-of-advantages{
-  margin-left: 20%;
-  margin-right: 20%;
-  padding: 0;
-  border-width: 0;
-}
-
-.li-text{
-  font-family: "Bookman Old Style", "Book Antiqua", "Courier New", sans-serif;
-  font-size: 150%;
-  margin: 0;
-}
-
-.li-text-desc{
-  font-size: 100%;
-  font-family: "Bookman Old Style", "Book Antiqua", "Courier New", sans-serif;
-  font-style: oblique;
-  margin: 2%;
-}
-
-.third-page {
-  background: url("https://foni.club/uploads/posts/2023-01/1673464718_foni-club-p-krutie-oboi-s-sobakami-na-telefon-24.jpg");
-  display: flex;
-  min-height: 100vh;
-}
-
-.third-page-body {
-  width: 100vw;
-  display: block;
-  align-content: center;
+.price-page {
+  background-image: url("https://foni.club/uploads/posts/2023-01/1673464718_foni-club-p-krutie-oboi-s-sobakami-na-telefon-24.jpg");
 }
 
 .prices-background {
-  width: 80%;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 2%;
   background-color: white;
-  border-radius: 7%;
-  padding-bottom: 2%;
   opacity: 90%;
 }
 
@@ -244,56 +178,10 @@
   font-family: "Book Antiqua", "Courier New", sans-serif;
 }
 
-.prices-table{
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "Bookman Old Style", "Book Antiqua", "Courier New", sans-serif;
-  font-size: 120%;
-  text-align: center;
-      border-collapse: collapse;
-}
-
-.prices-table td, .prices-table th{
-  border: 4px solid #ddd;
-  padding: 8px;
-}
-
-.prices-table tr:nth-child(even){
-  background-color: #f2f2f2;
-}
-
-.prices-table tr:hover {
-  background-color: #ddd;
-}
-
-.prices-background p{
-  text-align: center;
-  font-family: "Book Antiqua", "Courier New", sans-serif;
-  font-size: 120%;
-}
-
-.fourth-page {
-  background-color: #FFDF9B ;
-  display: flex;
-  min-height: 100vh;
-}
-
-.fourth-page-body {
-  width: 100vw;
-  display: block;
-  align-content: center;
-}
-
-.apply {
-  text-align: center;
-  font-size: 500%;
-  border-color: black;
-  border-width: 4px;
-  margin-bottom: 0;
-  padding-top: 5%;
-  padding-left: 5%;
-  padding-right: 5%;
+.uready{
   color: white;
+  font-family: "Bookman Old Style", "Book Antiqua", "Courier New", sans-serif;
+  font-size: 3vw;
   text-shadow:
     2px 0 black,
     0 -2px black,
@@ -301,79 +189,191 @@
     0 1px black;
 }
 
-.apply-form{
-  display: flex;
-  font-family:"Bookman Old Style", "Book Antiqua", "Courier New", sans-serif;
+@media (min-width: 577px) {
+  .custom-c-lg-size {
+    width: 85%;
+  }
 }
 
-.contacts{
-  margin-left: 10%;
-  margin-right: 2%;
-  display: block;
+@media (max-width: 576px) {
+  .custom-c-sm-size {
+    width: 100%;
+  }
 }
 
-.extra-form{
-  padding-left: 2%;
-  padding-right: 8%;
+
+@media (min-width: 577px) {
+  .custom-lg-tab-size {
+    font-family: Georgia;
+    font-size: 6vw;
+  }
 }
 
-fieldset{
-  margin: 2%;
+@media (max-width: 576px) {
+  .custom-sm-tab-size {
+    font-family: Georgia;
+    font-size: 15vw;
+  }
 }
 
-input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
 
-#submit-button{
-  margin-top: 1%;
-  margin-left: 10%;
-  margin-right: auto;
-  margin-bottom: 2%;
-  width: 30%;
-  background-color: #FFA840;
-  color: white;
-  padding: 14px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: "Book Antiqua";
-  font-size: 160%;
-}
+/*.second-page-body {*/
+/*  width: 100vw;*/
+/*  display: block;*/
+/*  align-content: center;*/
+/*}*/
 
-#submit-button:hover{
-  background-color: saddlebrown;
-}
+/*.info {*/
+/*  width: 80%;*/
+/*  margin-right: auto;*/
+/*  margin-left: auto;*/
+/*  margin-top: 2%;*/
+/*  background-color: white;*/
+/*  border-radius: 10%;*/
+/*  padding-bottom: 2%;*/
+/*}*/
 
-footer{
-  background-color: chocolate;
-  text-align: right;
-  color: white;
-  font-family: "Courier New";
-}
+/*#about-us{*/
+/*  padding-top: 4%;*/
+/*  margin-left: 5%;*/
+/*  margin-right: 5%;*/
+/*  font-family: "Bookman Old Style", "Book Antiqua", "Courier New", sans-serif;*/
+/*  font-size: 110%;*/
+/*  text-align: justify;*/
+/*}*/
 
-footer img{
-  padding-left: 10%;
-  float: left;
-}
+/*#advantages {*/
+/*  font-family: "Bookman Old Style", "Book Antiqua", "Courier New", sans-serif;*/
+/*  text-align: center;*/
+/*  margin-right: auto;*/
+/*  margin-left: auto;*/
+/*  margin-top:0%;*/
+/*  margin-bottom:0%;*/
+/*  font-size: 180%;*/
+/*}*/
 
-footer p{
-  padding: 10px;
-  margin-top:0;
-  margin-bottom:0;
-}
+/*#list-of-advantages{*/
+/*  margin-left: 20%;*/
+/*  margin-right: 20%;*/
+/*  padding: 0;*/
+/*  border-width: 0;*/
+/*}*/
 
-#insta {
-  display: inline;
-  height: 10%;
-  width: auto ;
-}
+/*.li-text{*/
+/*  font-family: "Bookman Old Style", "Book Antiqua", "Courier New", sans-serif;*/
+/*  font-size: 150%;*/
+/*  margin: 0;*/
+/*}*/
+
+/*.li-text-desc{*/
+/*  font-size: 100%;*/
+/*  font-family: "Bookman Old Style", "Book Antiqua", "Courier New", sans-serif;*/
+/*  font-style: oblique;*/
+/*  margin: 2%;*/
+/*}*/
+
+/*.third-page {*/
+/*  background: url("https://foni.club/uploads/posts/2023-01/1673464718_foni-club-p-krutie-oboi-s-sobakami-na-telefon-24.jpg");*/
+/*  display: flex;*/
+/*  min-height: 100vh;*/
+/*}*/
+
+/*.third-page-body {*/
+/*  width: 100vw;*/
+/*  display: block;*/
+/*  align-content: center;*/
+/*}*/
+
+/*.prices-table{*/
+/*  margin-left: auto;*/
+/*  margin-right: auto;*/
+/*  font-family: "Bookman Old Style", "Book Antiqua", "Courier New", sans-serif;*/
+/*  font-size: 120%;*/
+/*  text-align: center;*/
+/*      border-collapse: collapse;*/
+/*}*/
+
+/*.prices-table td, .prices-table th{*/
+/*  border: 4px solid #ddd;*/
+/*  padding: 8px;*/
+/*}*/
+
+/*.prices-table tr:nth-child(even){*/
+/*  background-color: #f2f2f2;*/
+/*}*/
+
+/*.prices-table tr:hover {*/
+/*  background-color: #ddd;*/
+/*}*/
+
+/*.prices-background p{*/
+/*  text-align: center;*/
+/*  font-family: "Book Antiqua", "Courier New", sans-serif;*/
+/*  font-size: 120%;*/
+/*}*/
+
+/*.fourth-page {*/
+/*  background-color: #FFDF9B ;*/
+/*  display: flex;*/
+/*  min-height: 100vh;*/
+/*}*/
+
+/*.fourth-page-body {*/
+/*  width: 100vw;*/
+/*  display: block;*/
+/*  align-content: center;*/
+/*}*/
+
+/*.apply {*/
+/*  text-align: center;*/
+/*  font-size: 500%;*/
+/*  border-color: black;*/
+/*  border-width: 4px;*/
+/*  margin-bottom: 0;*/
+/*  padding-top: 5%;*/
+/*  padding-left: 5%;*/
+/*  padding-right: 5%;*/
+/*  color: white;*/
+/*  text-shadow:*/
+/*    2px 0 black,*/
+/*    0 -2px black,*/
+/*    -2px 2px black,*/
+/*    0 1px black;*/
+/*}*/
+
+/*.apply-form{*/
+/*  display: flex;*/
+/*  font-family:"Bookman Old Style", "Book Antiqua", "Courier New", sans-serif;*/
+/*}*/
+
+/*.contacts{*/
+/*  margin-left: 10%;*/
+/*  margin-right: 2%;*/
+/*  display: block;*/
+/*}*/
+
+/*.extra-form{*/
+/*  padding-left: 2%;*/
+/*  padding-right: 8%;*/
+/*}*/
+
+/*fieldset{*/
+/*  margin: 2%;*/
+/*}*/
+
+/*input[type=text], select {*/
+/*  width: 100%;*/
+/*  padding: 12px 20px;*/
+/*  margin: 8px 0;*/
+/*  display: inline-block;*/
+/*  border: 1px solid #ccc;*/
+/*  border-radius: 4px;*/
+/*  box-sizing: border-box;*/
+/*}*/
+
+
+
+
 
 a{
   color: black;
@@ -385,4 +385,16 @@ a:visited{
 
 a:hover{
   color: red;
+}
+
+.myfooter{
+  background-color: saddlebrown;
+}
+
+.myfooter a{
+  color: orangered;
+}
+
+.myfooter a:hover{
+  color: yellow;
 }

@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our pets</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/pets-page.css">
+</head>
+
+<body style="min-width: 480px">
+
+<nav class="navbar navbar-expand-lg navbar-light sticky-top" >
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a href="index.html#home" class="navbar-brand">
+      <img src="logo.png" height="39" alt="PetFriends">
+      PetFriends
+    </a>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav">
+        <a href="index.html#home" class="nav-item nav-link">Home</a>
+        <a href="index.html#about-us" class="nav-item nav-link">About us</a>
+        <div class="nav-item dropdown">
+          <a href="pets.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Our pets</a>
+          <div class="dropdown-menu">
+            <a href="pets.html" class="dropdown-item">All</a>
+            <a href="pets.html#cats" class="dropdown-item">Cats</a>
+            <a href="pets.html#dogs" class="dropdown-item">Dogs</a>
+            <a href="pets.html#birds" class="dropdown-item">Birds</a>
+            <a href="pets.html#reptiles" class="dropdown-item">Reptiles</a>
+            <a href="pets.html#rodents" class="dropdown-item">Rodents</a>
+          </div>
+        </div>
+        <a href="index.html#prices" class="nav-item nav-link">Prices</a>
+        <a href="index.html#faq" class="nav-item nav-link">FAQ</a>
+        <a href="contacts.html" class="nav-item nav-link">Contacts</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 bg-primary p-0 m-0" style="height: 90vh">
+
+        <div id="pets-carousel" class="carousel slide p-0 m-0 w-100" data-bs-ride="carousel" >
+          <ol class="carousel-indicators"> <!-- Indicators of pages !-->
+            <li data-bs-target="pets-carousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="pets-carousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="pets-carousel" data-bs-slide-to="2"></li>
+            <li data-bs-target="pets-carousel" data-bs-slide-to="3"></li>
+            <li data-bs-target="pets-carousel" data-bs-slide-to="4"></li>
+            <li data-bs-target="pets-carousel" data-bs-slide-to="5"></li>
+          </ol>
+
+          <!-- carousel content -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="cl-item-lg-size">
+                <img src="img/cs-cats.jpg"
+                     class="carousel-image">
+
+                <div class="carousel-caption">
+                  <div class="row d-flex align-items-end">
+                    <div class="col-6">
+                      <h1 class="text-start text-shadow cs-text">Our pets</h1>
+                    </div>
+                    <div class="col-5">
+                      <h2 class="text-end text-shadow cs-text">Scroll down to see more</h2>
+                    </div>
+                    <div class="col-1">
+                      <h2 class="text-shadow cs-text"><i class="fa fa-arrow-down"></i></h2>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="cl-item-lg-size">
+                <img src="img/cs-hare.jpg"
+                     class="carousel-image">
+                <div class="carousel-caption">
+                  <div class="row d-flex align-items-end">
+                    <div class="col-6">
+                      <h1 class="text-start text-shadow cs-text">Our pets</h1>
+                    </div>
+                    <div class="col-5">
+                      <h2 class="text-end text-shadow cs-text">Scroll down to see more</h2>
+                    </div>
+                    <div class="col-1">
+                      <h2 class="text-shadow cs-text"><i class="fa fa-arrow-down"></i></h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="cl-item-lg-size">
+                <img src="img/cs-lizards.jpeg"
+                     class="carousel-image">
+                <div class="carousel-caption">
+                  <div class="row d-flex align-items-end">
+                    <div class="col-6">
+                      <h1 class="text-start text-shadow cs-text">Our pets</h1>
+                    </div>
+                    <div class="col-5">
+                      <h2 class="text-end text-shadow cs-text">Scroll down to see more</h2>
+                    </div>
+                    <div class="col-1">
+                      <h2 class="text-shadow cs-text"><i class="fa fa-arrow-down"></i></h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="cl-item-lg-size">
+                <img src="img/cs-dogs.jpg"
+                class="carousel-image">
+                <div class="carousel-caption">
+                  <div class="row d-flex align-items-end">
+                    <div class="col-6">
+                      <h1 class="text-start text-shadow cs-text">Our pets</h1>
+                    </div>
+                    <div class="col-5">
+                      <h2 class="text-end text-shadow cs-text">Scroll down to see more</h2>
+                    </div>
+                    <div class="col-1">
+                      <h2 class="text-shadow cs-text"><i class="fa fa-arrow-down"></i></h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="cl-item-lg-size">
+                <img src="img/cs-parrots.jpg"
+                     class="carousel-image">
+                <div class="carousel-caption">
+                  <div class="row d-flex align-items-end">
+                    <div class="col-6">
+                      <h1 class="text-start text-shadow cs-text">Our pets</h1>
+                    </div>
+                    <div class="col-5">
+                      <h2 class="text-end text-shadow cs-text">Scroll down to see more</h2>
+                    </div>
+                    <div class="col-1">
+                      <h2 class="text-shadow cs-text"><i class="fa fa-arrow-down"></i></h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="cl-item-lg-size">
+                <img src="img/cs-rodents.jpg"
+                     class="carousel-image">
+                <div class="carousel-caption">
+                  <div class="row d-flex align-items-end">
+                    <div class="col-6">
+                      <h1 class="text-start text-shadow cs-text">Our pets</h1>
+                    </div>
+                    <div class="col-5">
+                      <h2 class="text-end text-shadow cs-text">Scroll down to see more</h2>
+                    </div>
+                    <div class="col-1">
+                      <h2 class="text-shadow cs-text"><i class="fa fa-arrow-down"></i></h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a class="carousel-control-prev" href="#pets-carousel" data-bs-slide="prev"> <!-- left controller-->
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#pets-carousel" data-bs-slide="next"> <!-- right controller-->
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- pets -->
+  <div class="container-fluid backgr px-lg-5 px-1 py-3">
+    <h1 class="text-white text-shadow text-center custom-lg-tab-size custom-sm-tab-size scrolled" id="cats">Cats</h1>
+
+    <div>
+      <ul class="nav nav-tabs" id="cats-tab">
+        <li class="nav-item pets-nav">
+          <a href="#all" class="nav-link active custom-lg-tab-size custom-sm-tab-size" data-bs-toggle="tab" >All</a>
+        </li>
+        <li class="nav-item pets-nav">
+          <a href="#long" class="nav-link" data-bs-toggle="tab">Longhair</a>
+        </li>
+        <li class="nav-item pets-nav">
+          <a href="#semilong" class="nav-link" data-bs-toggle="tab">Semi-longhair</a>
+        </li>
+        <li class="nav-item pets-nav">
+          <a href="#short" class="nav-link" data-bs-toggle="tab">Shorthair</a>
+        </li>
+        <li class="nav-item pets-nav">
+          <a href="#siam" class="nav-link" data-bs-toggle="tab"> Siamese and oriental shorthair</a>
+        </li>
+      </ul>
+
+
+
+      <div class="tab-content">
+        <!-- all cats-->
+        <div class="tab-pane fade show active" id="all">
+          <div class="row row-cols-lg-5 row-cols-3">
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/cats/lh-russian.jpeg" alt="russian cat">
+                <div class="card-body">
+                  <h4 class="card-title">Siberian</h4>
+                  <p class="card-text">Semi-long hair breed. The Siberian cat is often called hypoallergenic because it produces less Fel d 1 than other cat breeds</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/cats/sh-br.jpeg" alt="sh british cat">
+                <div class="card-body">
+                  <h4 class="card-title">British Shorthair</h4>
+                  <p class="card-text">The British Shorthair is the pedigreed version of the traditional British domestic cat, with a distinctively stocky body, thick coat, and broad face.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/cats/lh-br.jpeg" alt="longhair british">
+                <div class="card-body">
+                  <h4 class="card-title">British Longhair</h4>
+                  <p class="card-text">The British Longhair is a medium-sized, a kind of British shorthair cat with a long coat. </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/cats/s-siam.jpg" alt="Siamese">
+                <div class="card-body">
+                  <h4 class="card-title">Siamese cat</h4>
+                  <p class="card-text">The Siamese cat is a graceful animal with a unique color and blue eyes. Cats of this breed are active, sociable and respond to loving owners with reciprocity and trust.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/cats/sh-sc.jpg" alt="Scottish fold">
+                <div class="card-body">
+                  <h4 class="card-title">Scottish Fold</h4>
+                  <p class="card-text">Shorthair breed.The Scottish Fold Cat is a breed of domestic cats with a charming appearance and affectionate character. Curved ears and plush wool have become the hallmark of the breed.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/cats/sh-bombey.jpg" alt="Bombay">
+                <div class="card-body">
+                  <h4 class="card-title">Bombay cat</h4>
+                  <p class="card-text">Shorthair breed. The Bombay Cat is a companion pet for active and cheerful people who spend most of their free time at home. Bombay demonstrates devotion and love for a person. It is intelligent and empathic</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/cats/slh-main.jpg" alt="Maine Coon">
+                <div class="card-body">
+                  <h4 class="card-title">Maine Coon</h4>
+                  <p class="card-text">Semi-longhair breed. The Maine Coon is a representative of the feline family with American roots. A domesticated cat of huge size will become the best friend and companion. </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/cats/sh-munch.jpg" alt="Munchkin">
+                <div class="card-body">
+                  <h4 class="card-title">Munchkin</h4>
+                  <p class="card-text">Munchkin is a relatively modern breed of cats. They differ in short paws, the difference in length, compared with ordinary cats, reaches 2-3 cm. </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/cats/lh-persian.jpeg" alt="Persian cat">
+                <div class="card-body">
+                  <h4 class="card-title">Persian</h4>
+                  <p class="card-text">Longhair breed. The Persian cat is one of the oldest long—haired feline breeds. She is distinguished by her original appearance, gorgeous fur and calm character.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/cats/s-peter.jpg" alt="Peterbald">
+                <div class="card-body">
+                  <h4 class="card-title">Peterbald</h4>
+                  <p class="card-text">Peterbold is a hairless breed of graceful and elegant cats originally from St. Petersburg. Thanks to their friendly and accommodating nature, the Peterbolds have won universal love and respect. </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/cats/sh-exotic.jpg" alt="Exotic shorthair">
+                <div class="card-body">
+                  <h4 class="card-title">Exotic Shorthair</h4>
+                  <p class="card-text">The exotic cat is one of the most popular breeds in the world. The secret of her success lies in her kind, friendly nature and, of course, a very cute expression of her muzzle.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/cats/sh-chartr.jpg" alt="Chartreux">
+                <div class="card-body">
+                  <h4 class="card-title">Chartreux</h4>
+                  <p class="card-text">Shorthair breed. The Chartreux is a rare breed of cat from France, and is recognised by a number of registries around the world. The Chartreux is large and muscular with relatively short, fine-boned limbs, and very fast reflexes.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/cats/s-thai.jpg" alt="Thai cat">
+                <div class="card-body">
+                  <h4 class="card-title">Thai cat</h4>
+                  <p class="card-text">The Thai is a newly renamed but old cat breed, related to but different from the Western, modern-style Siamese cat.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/cats/slh-rag.jpg" alt="Ragdoll">
+                <div class="card-body">
+                  <h4 class="card-title">Ragdoll</h4>
+                  <p class="card-text">Semi-longhair breed. The Ragdoll is a breed of cat with a distinct colorpoint coat and blue eyes. Its morphology is large and weighty, and it has a semi-long and silky soft coat. </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/cats/lh-hima.jpg" alt="Himalayan">
+                <div class="card-body">
+                  <h4 class="card-title">Himalayan cat</h4>
+                  <p class="card-text">Longhair breed. The Himalayan cat is a blue–eyed long-haired creature of color-point color, obtained by mating Persians with representatives of the Siamese group.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- longhair cats -->
+        <div class="tab-pane fade" id="long">
+          <div class="row row-cols-lg-5 row-cols-3">
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/cats/lh-hima.jpg" alt="Himalayan">
+                <div class="card-body">
+                  <h4 class="card-title">Himalayan cat</h4>
+                  <p class="card-text">Longhair breed. The Himalayan cat is a blue–eyed long-haired creature of color-point color, obtained by mating Persians with representatives of the Siamese group.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/cats/lh-br.jpeg" alt="longhair british">
+                <div class="card-body">
+                  <h4 class="card-title">British Longhair</h4>
+                  <p class="card-text">The British Longhair is a medium-sized, a kind of British shorthair cat with a long coat. This mutation is caused by the activation of certain genes during the conception of a kitten.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/cats/lh-persian.jpeg" alt="Persian cat">
+                <div class="card-body">
+                  <h4 class="card-title">Persian</h4>
+                  <p class="card-text">Longhair breed. The Persian cat is one of the oldest long—haired feline breeds. She is distinguished by her original appearance, gorgeous fur and calm character.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- semilong hair cats-->
+        <div class="tab-pane fade" id="semilong">
+          <div class="row row-cols-lg-5 row-cols-3">
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/cats/slh-rag.jpg" alt="Ragdoll">
+                <div class="card-body">
+                  <h4 class="card-title">Ragdoll</h4>
+                  <p class="card-text">Semi-longhair breed. The Ragdoll is a breed of cat with a distinct colorpoint coat and blue eyes. Its morphology is large and weighty, and it has a semi-long and silky soft coat. </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/cats/slh-main.jpg" alt="Maine Coon">
+                <div class="card-body">
+                  <h4 class="card-title">Maine Coon</h4>
+                  <p class="card-text">Semi-longhair breed. The Maine Coon is a representative of the feline family with American roots. A domesticated cat of huge size will become the best friend and companion. </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/cats/lh-russian.jpeg" alt="russian cat">
+                <div class="card-body">
+                  <h4 class="card-title">Siberian</h4>
+                  <p class="card-text">Semi-long hair breed. The Siberian cat is often called hypoallergenic because it produces less Fel d 1 than other cat breeds</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- short hair cats-->
+        <div class="tab-pane fade" id="short">
+          <div class="row row-cols-lg-5 row-cols-3">
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/cats/sh-chartr.jpg" alt="Chartreux">
+                <div class="card-body">
+                  <h4 class="card-title">Chartreux</h4>
+                  <p class="card-text">Shorthair breed. The Chartreux is a rare breed of cat from France, and is recognised by a number of registries around the world. The Chartreux is large and muscular with relatively short, fine-boned limbs, and very fast reflexes.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/cats/sh-exotic.jpg" alt="Exotic shorthair">
+                <div class="card-body">
+                  <h4 class="card-title">Exotic Shorthair</h4>
+                  <p class="card-text">The exotic cat is one of the most popular breeds in the world. The secret of her success lies in her kind, friendly nature and, of course, a very cute expression of her muzzle.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/cats/sh-bombey.jpg" alt="Bombay">
+                <div class="card-body">
+                  <h4 class="card-title">Bombay cat</h4>
+                  <p class="card-text">Shorthair breed. The Bombay Cat is a companion pet for active and cheerful people who spend most of their free time at home. Bombay demonstrates devotion and love for a person. It is intelligent and empathic</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/cats/slh-main.jpg" alt="Maine Coon">
+                <div class="card-body">
+                  <h4 class="card-title">Maine Coon</h4>
+                  <p class="card-text">Semi-longhair breed. The Maine Coon is a representative of the feline family with American roots. A domesticated cat of huge size will become the best friend and companion. </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/cats/sh-br.jpeg" alt="sh british cat">
+                <div class="card-body">
+                  <h4 class="card-title">British Shorthair</h4>
+                  <p class="card-text">The British Shorthair is the pedigreed version of the traditional British domestic cat, with a distinctively stocky body, thick coat, and broad face.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/cats/sh-sc.jpg" alt="Scottish fold">
+                <div class="card-body">
+                  <h4 class="card-title">Scottish Fold</h4>
+                  <p class="card-text">Shorthair breed.The Scottish Fold Cat is a breed of domestic cats with a charming appearance and affectionate character. Curved ears and plush wool have become the hallmark of the breed.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="siam">
+          <div class="row row-cols-lg-5 row-cols-3">
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/cats/s-siam.jpg" alt="Siamese">
+                <div class="card-body">
+                  <h4 class="card-title">Siamese cat</h4>
+                  <p class="card-text">The Siamese cat is a graceful animal with a unique color and blue eyes. Cats of this breed are active, sociable and respond to loving owners with reciprocity and trust.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/cats/s-thai.jpg" alt="Thai cat">
+                <div class="card-body">
+                  <h4 class="card-title">Thai cat</h4>
+                  <p class="card-text">The Thai is a newly renamed but old cat breed, related to but different from the Western, modern-style Siamese cat.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/cats/s-peter.jpg" alt="Peterbald">
+                <div class="card-body">
+                  <h4 class="card-title">Peterbald</h4>
+                  <p class="card-text">Peterbold is a hairless breed of graceful and elegant cats originally from St. Petersburg. Thanks to their friendly and accommodating nature, the Peterbolds have won universal love and respect. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Dogs -->
+
+    <h1 class="text-white text-shadow text-center hd-text-size scrolled
+    custom-lg-tab-size custom-sm-tab-size" id="dogs">Dogs</h1>
+    <div>
+      <ul class="nav nav-tabs" id="dogs-tab">
+        <li class="nav-item pets-nav">
+          <a href="#all-dogs" class="nav-link active " data-bs-toggle="tab">All</a>
+        </li>
+        <li class="nav-item pets-nav">
+          <a href="#small" class="nav-link" data-bs-toggle="tab">Small</a>
+        </li>
+        <li class="nav-item pets-nav">
+          <a href="#medium" class="nav-link" data-bs-toggle="tab">Medium</a>
+        </li>
+        <li class="nav-item pets-nav">
+          <a href="#large" class="nav-link" data-bs-toggle="tab">Large</a>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="all-dogs">
+          <div class="row row-cols-lg-5 row-cols-3">
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/dogs/lg-akita.jpg" alt="Akita">
+                <div class="card-body">
+                  <h4 class="card-title">Akita</h4>
+                  <p class="card-text">The Akita Inu is one of the oldest dog breeds on Earth, bred in the northern regions of Japan. This is a proud, strong and loyal pet.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/dogs/md-kli.jpg" alt="Alaskan Klee Kai">
+                <div class="card-body">
+                  <h4 class="card-title">Alaskan Klee Kai</h4>
+                  <p class="card-text">The Alaskan Kli-kai is a miniature copy of the husky and the lucky owner of a remarkable charm that will melt your heart! You will not hold back a smile, looking at such a charismatic pet</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/dogs/md-chow.jpeg" alt="Chow-chow">
+                <div class="card-body">
+                  <h4 class="card-title">Chow-chow</h4>
+                  <p class="card-text">Chow-chow is a dog with an amazing appearance, a history covered with legends and an amazing, completely unknown character.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/dogs/sm-bishon-frise.jpg" alt="Bichon frise">
+                <div class="card-body">
+                  <h4 class="card-title">Bichon Frise</h4>
+                  <p class="card-text">Bichon Frise (French lapdog) is a miniature plush "antidepressant" and a charming minx with whom you will not have to be bored.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/dogs/sm-chih.jpg" alt="Chihuahua">
+                <div class="card-body">
+                  <h4 class="card-title">Chihuahua</h4>
+                  <p class="card-text">Chihuahuas are decorative dogs of extremely small size. Infinitely devoted to the owner and extremely proud. </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/dogs/lg-husky.jpeg" alt="Siberian Husky">
+                <div class="card-body">
+                  <h4 class="card-title">Siberian Husky</h4>
+                  <p class="card-text">The Siberian Husky is one of the oldest dog breeds that has been serving man faithfully for many centuries.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/dogs/lg-great.jpg" alt="Great Swiss Mountain Dog">
+                <div class="card-body">
+                  <h4 class="card-title">Great Swiss Mountain Dog</h4>
+                  <p class="card-text">The Great Swiss Mountain Dog is a large tricolor mountain dog bred in the Alps.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/dogs/lg-gdr.jpg" alt="Golden Retriever">
+                <div class="card-body">
+                  <h4 class="card-title">Golden Retriever</h4>
+                  <p class="card-text">The Golden Retriever is a great companion and the hunter's best friend. Good-natured, calm, perfectly aportiruet shot game.  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/dogs/sm-york.jpg" alt="Yorkshire Terrier">
+                <div class="card-body">
+                  <h4 class="card-title">Yorkshire Terrier</h4>
+                  <p class="card-text">The Yorkshire Terrier is one of the most popular indoor and decorative dog breeds in the world. York is charming in appearance, energetic, affectionate.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/dogs/sm-king.jpg" alt="Cavalier King Charles Spaniel">
+                <div class="card-body">
+                  <h4 class="card-title">Cavalier King Charles Spaniel</h4>
+                  <p class="card-text">The Cavalier King Charles Spaniel is a cheerful shaggy fidget with an expressive, flirtatious appearance and a good-natured character. </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/dogs/sm-dach.jpeg" alt="Dachshund">
+                <div class="card-body">
+                  <h4 class="card-title">Dwarf Dachshund</h4>
+                  <p class="card-text">The dwarf dachshund (miniature dachshund, mini-dachshund) is the closest relative of the standard dachshund, having the same exterior, but inferior to it in size.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/dogs/sm-pom.jpg" alt="Pomeranian ">
+                <div class="card-body">
+                  <h4 class="card-title">Pomeranian </h4>
+                  <p class="card-text">The Pomeranian looks like a child's toy. This fluffy ball will become a loyal friend and a ringing bark to brighten up the most cloudy day.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/dogs/md-shiba.jpg" alt="Shiba Inu">
+                <div class="card-body">
+                  <h4 class="card-title">Shiba Inu</h4>
+                  <p class="card-text">Shiba Inu is a charming dog with plush fur and a wayward character. Being the owner of such a pet is not easy, but if you win his respect and trust, you will get a lot of pleasure from communicating with an intelligent and inquisitive friend.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/dogs/md-sheltie.jpg" alt="Sheltie">
+                <div class="card-body">
+                  <h4 class="card-title">Sheltie</h4>
+                  <p class="card-text">Sheltie (Shetland Shepherd) is a native of northeastern Scotland; a cheerful companion, responsible babysitter and devoted friend.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/dogs/sm-jack.jpg" alt="Jack Russell Terrier">
+                <div class="card-body">
+                  <h4 class="card-title">Jack Russell Terrier</h4>
+                  <p class="card-text">The Jack Russell Terrier is a recognizable and popular breed of dog. This is a pet with whom you will not have to be bored for a minute.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- small dogs -->
+        <div class="tab-pane fade" id="small">
+          <div class="row row-cols-lg-5 row-cols-3">
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/dogs/sm-bishon-frise.jpg" alt="Bichon frise">
+                <div class="card-body">
+                  <h4 class="card-title">Bichon Frise</h4>
+                  <p class="card-text">Bichon Frise (French lapdog) is a miniature plush "antidepressant" and a charming minx with whom you will not have to be bored.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/dogs/sm-chih.jpg" alt="Chihuahua">
+                <div class="card-body">
+                  <h4 class="card-title">Chihuahua</h4>
+                  <p class="card-text">Chihuahuas are decorative dogs of extremely small size. Infinitely devoted to the owner and extremely proud. </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/dogs/sm-york.jpg" alt="Yorkshire Terrier">
+                <div class="card-body">
+                  <h4 class="card-title">Yorkshire Terrier</h4>
+                  <p class="card-text">The Yorkshire Terrier is one of the most popular indoor and decorative dog breeds in the world. York is charming in appearance, energetic, affectionate.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/dogs/sm-king.jpg" alt="Cavalier King Charles Spaniel">
+                <div class="card-body">
+                  <h4 class="card-title">Cavalier King Charles Spaniel</h4>
+                  <p class="card-text">The Cavalier King Charles Spaniel is a cheerful shaggy fidget with an expressive, flirtatious appearance and a good-natured character. </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/dogs/sm-dach.jpeg" alt="Dachshund">
+                <div class="card-body">
+                  <h4 class="card-title">Dwarf Dachshund</h4>
+                  <p class="card-text">The dwarf dachshund (miniature dachshund, mini-dachshund) is the closest relative of the standard dachshund, having the same exterior, but inferior to it in size.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/dogs/sm-pom.jpg" alt="Pomeranian ">
+                <div class="card-body">
+                  <h4 class="card-title">Pomeranian </h4>
+                  <p class="card-text">The Pomeranian looks like a child's toy. This fluffy ball will become a loyal friend and a ringing bark to brighten up the most cloudy day.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/dogs/sm-jack.jpg" alt="Jack Russell Terrier">
+                <div class="card-body">
+                  <h4 class="card-title">Jack Russell Terrier</h4>
+                  <p class="card-text">The Jack Russell Terrier is a recognizable and popular breed of dog. This is a pet with whom you will not have to be bored for a minute.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- middle dogs-->
+        <div class="tab-pane fade" id="medium">
+          <div class="row row-cols-lg-5 row-cols-3">
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/dogs/md-kli.jpg" alt="Alaskan Klee Kai">
+                <div class="card-body">
+                  <h4 class="card-title">Alaskan Klee Kai</h4>
+                  <p class="card-text">The Alaskan Kli-kai is a miniature copy of the husky and the lucky owner of a remarkable charm that will melt your heart! You will not hold back a smile, looking at such a charismatic pet</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/dogs/md-chow.jpeg" alt="Chow-chow">
+                <div class="card-body">
+                  <h4 class="card-title">Chow-chow</h4>
+                  <p class="card-text">Chow-chow is a dog with an amazing appearance, a history covered with legends and an amazing, completely unknown character.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/dogs/md-sheltie.jpg" alt="Sheltie">
+                <div class="card-body">
+                  <h4 class="card-title">Sheltie</h4>
+                  <p class="card-text">Sheltie (Shetland Shepherd) is a native of northeastern Scotland; a cheerful companion, responsible babysitter and devoted friend.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/dogs/md-shiba.jpg" alt="Shiba Inu">
+                <div class="card-body">
+                  <h4 class="card-title">Shiba Inu</h4>
+                  <p class="card-text">Shiba Inu is a charming dog with plush fur and a wayward character. Being the owner of such a pet is not easy, but if you win his respect and trust, you will get a lot of pleasure from communicating with an intelligent and inquisitive friend.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- large dogs-->
+        <div class="tab-pane fade" id="large">
+          <div class="row row-cols-lg-5 row-cols-3">
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/dogs/lg-husky.jpeg" alt="Siberian Husky">
+                <div class="card-body">
+                  <h4 class="card-title">Siberian Husky</h4>
+                  <p class="card-text">The Siberian Husky is one of the oldest dog breeds that has been serving man faithfully for many centuries.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/dogs/lg-great.jpg" alt="Great Swiss Mountain Dog">
+                <div class="card-body">
+                  <h4 class="card-title">Great Swiss Mountain Dog</h4>
+                  <p class="card-text">The Great Swiss Mountain Dog is a large tricolor mountain dog bred in the Alps.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/dogs/lg-gdr.jpg" alt="Golden Retriever">
+                <div class="card-body">
+                  <h4 class="card-title">Golden Retriever</h4>
+                  <p class="card-text">The Golden Retriever is a great companion and the hunter's best friend. Good-natured, calm, perfectly aportiruet shot game.  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+              <div class="card">
+                <img class="card-img-top" src="img/dogs/lg-akita.jpg" alt="Akita">
+                <div class="card-body">
+                  <h4 class="card-title">Akita</h4>
+                  <p class="card-text">The Akita Inu is one of the oldest dog breeds on Earth, bred in the northern regions of Japan. This is a proud, strong and loyal pet.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Birds -->
+    <h1 class="text-white text-shadow text-center hd-text-size mb-4 scrolled
+    custom-lg-tab-size custom-sm-tab-size" id="birds">Birds</h1>
+    <div class="row row-cols-lg-5 row-cols-3">
+      <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+        <div class="card">
+          <img class="card-img-top" src="img/birds/canary.jpg" alt="Domestic canary">
+          <div class="card-body">
+            <h4 class="card-title">Domestic canary</h4>
+            <p class="card-text">The domestic canary is a domesticated form of the wild canary, a small songbird in the finch family originating from the Macaronesian Islands</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+        <div class="card">
+          <img class="card-img-top" src="img/birds/cockatiel.jpg" alt="Cockatiel">
+          <div class="card-body">
+            <h4 class="card-title">Cockatiel</h4>
+            <p class="card-text">The cockatiel is a medium-sized parrot that is a member of its own branch of the cockatoo family endemic to Australia.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+        <div class="card">
+          <img class="card-img-top" src="img/birds/kokato.jpg" alt="Cockatoo">
+          <div class="card-body">
+            <h4 class="card-title">Cockatoo</h4>
+            <p class="card-text">The Cockatoo is a lively, playful, and energetic bird mainly known for its talkative nature and brilliant crest of plumage on its head.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+        <div class="card">
+          <img class="card-img-top" src="img/birds/volnistie-popugai-foto-1.jpg" alt="Budgerigar">
+          <div class="card-body">
+            <h4 class="card-title">Budgerigar</h4>
+            <p class="card-text">Budgies are small and noisy birds that are distinguished by bright plumage and talkativeness.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+        <div class="card">
+          <img class="card-img-top" src="img/birds/hyacinth1.jpg" alt="Hyacinth macaw">
+          <div class="card-body">
+            <h4 class="card-title">Hyacinth macaw</h4>
+            <p class="card-text">Hyacinth macaw is the most expensive and largest domestic bird. Their strong beak is capable of causing serious damage to surrounding objects, so you need to carefully monitor your pet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Rodents and hares-->
+    <h1 class="text-white text-shadow text-center hd-text-size mb-4 scrolled
+    custom-lg-tab-size custom-sm-tab-size" id="rodents">Rodents and rabbits</h1>
+    <div class="row row-cols-lg-5 row-cols-3">
+      <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+        <div class="card">
+          <img class="card-img-top" src="img/rods/hares.jpg" alt="Rabbits">
+          <div class="card-body">
+            <h4 class="card-title">Rabbits</h4>
+            <p class="card-text">Rabbits are very intelligent animals that are popular with many as pets due to their pretty appearance and friendliness.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+        <div class="card">
+          <img class="card-img-top" src="img/rods/morskaya_svinka_kak_uhajivat.jpg" alt="Guinea pig">
+          <div class="card-body">
+            <h4 class="card-title">Guinea pig</h4>
+            <p class="card-text">Guinea pig is a funny pet. It requires careful care and attention of the owners.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+        <div class="card">
+          <img class="card-img-top" src="img/rods/shinshilla-fon-24.jpg" alt="Chinchillas">
+          <div class="card-body">
+            <h4 class="card-title">Chinchillas</h4>
+            <p class="card-text">Chinchillas are active and playful, but at the same time timid and do not always like be picked up.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+        <div class="card">
+          <img class="card-img-top" src="img/rods/syrian%20hamster.jpg" alt="Syrian hamster">
+          <div class="card-body">
+            <h4 class="card-title">Syrian hamster</h4>
+            <p class="card-text">The Syrian hamster has long been a popular pet. A nimble fluffy animal quickly gets used to a person and fills his life with fun adventures. </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+        <div class="card">
+          <img class="card-img-top" src="img/rods/dzhungarskii-khomyachok-malenkii-zhivotnie-28.jpg" alt="Dzungarian hamster">
+          <div class="card-body">
+            <h4 class="card-title">Dzungarian hamster</h4>
+            <p class="card-text">The Dzungarian hamster is a miniature cute animal. Rodents conquer the hearts not only by their comeliness, but also by their lively character.</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!--Reptiles-->
+    <h1 class="text-white text-shadow text-center hd-text-size mb-4 scrolled
+    custom-lg-tab-size custom-sm-tab-size" id="reptiles">Reptiles</h1>
+    <div class="row row-cols-lg-5 row-cols-3">
+      <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+        <div class="card">
+          <img class="card-img-top" src="img/pond-slider.jpg" alt="Pond slider">
+          <div class="card-body">
+            <h4 class="card-title">Pond slider</h4>
+            <p class="card-text">The pond slider is the most common aquatic reptile in the world. These animals are unpretentious in care, but have their own peculiarities of maintenance:</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+        <div class="card">
+          <img class="card-img-top" src="img/reptiles/muskusnaya-cherepakha-zhivot-1.jpg" alt="Sternotherus odoratus">
+          <div class="card-body">
+            <h4 class="card-title">Sternotherus odoratus</h4>
+            <p class="card-text">The Sternotherus odoratus is the tiniest and most adorable of all freshwater turtles.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+        <div class="card">
+          <img class="card-img-top" src="img/reptiles/green.jpg" alt="Plumed basilisk">
+          <div class="card-body">
+            <h4 class="card-title">Plumed basilisk</h4>
+            <p class="card-text">Basilisks are a species of exotic animals belonging to the iguana family.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+        <div class="card">
+          <img class="card-img-top" src="img/reptiles/leopard-geko.jpg" alt="Leopard gecko">
+          <div class="card-body">
+            <h4 class="card-title">Leopard gecko</h4>
+            <p class="card-text">Leopard gecko is a wonderful pet for very beginners and for experienced terrariumists. This is a lizard that is very easy to take care of, and it will delight you every day with its signature smile.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
+        <div class="card">
+          <img class="card-img-top" src="img/reptiles/Pogona.jpg" alt="Pogona vitticeps">
+          <div class="card-body">
+            <h4 class="card-title">Pogona vitticeps</h4>
+            <p class="card-text">The bearded agama is an obedient and easy-to-care pet. These lizards have been kept at home for more than 30 years.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="myfooter container-fluid pe-1 ps-1 pt-2">
+    <div class="row m-0 pt-0">
+      <div class="col-12 p-0 m-0">
+        <p class="text-center">
+          <a href="https://www.instagram.com/polinaster.13/"><i class="fa fa-instagram fa-lg text-white"></i></a> &nbsp;&nbsp;&nbsp;
+          <a href="https://t.me/spasibo_chto_pozvali"><i class="fa fa-telegram fa-lg text-white"></i></a> &nbsp;&nbsp;&nbsp;
+          <a href="https://web.whatsapp.com/"><i class="fa fa-whatsapp fa-lg text-white"></i></a></p>
+      </div>
+      <div class="col-6 mb-0 p-0">
+        <p class="mb-0 text-white">
+          Mangilik El avenue, 55/11, Business center EXPO, block C1 <br>
+          Astana, Kazakhstan, 010000
+        </p>
+      </div>
+      <div class="col-6 mb-0 p-0 d-flex justify-content-end text-white">
+        <div class="text-end">
+          <p class="mb-0 p-0">
+            <img class="float-start" src="logo.png" height="60" alt="PetFriends">PetFriends - pet store in Astana, since 1991
+          </p>
+          <p class="mb-0 p-0">Founder - Polina Batova</p></div>
+      </div>
+
+    </div>
+    <p class="text-center p-0 m-0 text-white" >©️No Copyright - <a href="https://pollybreak.github.io/Markup-of-Pet-Shop-website/">Pet Store "PetFriends"</a></p>
+  </footer>
+
+</body>
+
+
+</html>

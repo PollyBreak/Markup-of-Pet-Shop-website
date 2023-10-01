@@ -1,0 +1,76 @@
+.navbar{
+  background-color: rgba(255,255,255,0.7);
+  backdrop-filter: blur(5px);
+  font-weight: 550;
+}
+
+.cl-item-lg-size{
+  height: 90vh;
+}
+
+.carousel-image{
+  height:100%;
+  width:100%;
+  object-fit: cover
+}
+
+.carousel-caption h1{
+  font-size: 5vw;
+}
+
+.text-shadow {
+  text-shadow:
+    2px 0 black,
+    0 -2px black,
+    -2px 2px black,
+    0 1px black;
+}
+
+.cs-text{
+  color: blanchedalmond;
+}
+
+.scrolled{
+  scroll-margin-top: 65px;
+}
+
+.backgr{
+  background-color: #FFF796;
+  scroll-margin-top: 65px;
+}
+
+.pets-nav a{
+  font-size: 2vw;
+  color:saddlebrown;
+}
+.pets-nav a:hover{
+  color: red;
+}
+
+
+@media (min-width: 577px) {
+  .custom-lg-tab-size {
+    font-family: Georgia;
+    font-size: 7vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-sm-tab-size {
+    font-family: Georgia;
+    font-size: 25vw;
+  }
+}
+
+.myfooter{
+  background-color: saddlebrown;
+}
+
+.myfooter a{
+  color: orangered;
+}
+
+.myfooter a:hover{
+  color: yellow;
+}
+
