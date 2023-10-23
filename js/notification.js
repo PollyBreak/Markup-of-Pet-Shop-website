@@ -23,10 +23,10 @@ document.addEventListener('DOMContentLoaded', function() {
       let title = "PetFriends";
       let icon = "logo.png";
       let body = "Have a good day! Thank you for attention 🐈";
-      let notification = new Notification(title, { body, icon });
+      let notification = new Notification(title, { body, icon });//creating of notification
       notification.onclick = () => {
         notification.close();
-        window.parent.focus();
+        window.parent.focus(); //after closing the notification focuses on the page
       }
     }
   })

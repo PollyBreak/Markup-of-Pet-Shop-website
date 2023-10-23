@@ -13,8 +13,8 @@
 .flip-card .top-flip,
 .flip-card .bottom-flip {
   height: .75em;
-  /*font-size: 4rem;*/
-  color: lightcoral;
+  font-size: 4rem;
+  color: white;
   line-height: 1;
   padding: .25em;
   overflow: hidden;
@@ -22,7 +22,7 @@
 
 .top,
 .flip-card .top-flip {
-  background-color: #f7f7f7;
+  background-color: #fb8500;
   border-top-right-radius: .1em;
   border-top-left-radius: .1em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -30,7 +30,7 @@
 
 .bottom,
 .flip-card .bottom-flip {
-  background-color: white;
+  background-color: #fb8500;
   display: flex;
   align-items: flex-end;
   border-bottom-right-radius: .1em;
@@ -66,6 +66,8 @@
 }
 
 .timer-container {
+  margin-top: 30px;
+  margin-bottom: 20px;
   display: flex;
   gap: .5em;
   justify-content: center;
@@ -85,4 +87,29 @@
 
 .segment-title {
   font-size: 1rem;
+}
+
+.timer-input{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-number{
+  height: 30px;
+  border: black;
+  border-radius: 0.5rem;
+  margin-right: 6px;
+  width: 7%;
+}
+
+#start-timer {
+  height: 25px;
+  background-color: orangered;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.hidden {
+  display: none !important;
 }

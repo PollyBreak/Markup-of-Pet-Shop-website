@@ -16,7 +16,7 @@
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .myAccordion:hover {
+.myAccordion:hover {
   background-color: darkorange;
 }
 
@@ -33,7 +33,7 @@
   padding: 0 18px;
   background-color: white;
   max-height: 0;
-  overflow: scroll;
+  overflow: clip;
   transition: max-height 0.2s ease-out;
   border-radius: 1rem;
 }
