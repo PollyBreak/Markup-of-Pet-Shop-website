@@ -4,11 +4,19 @@
   <meta charset="utf-8">
   <title>Pet Store</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="js/todo-list.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/countdown-timer.js"></script>
+  <script src="js/accordion.js"></script>
+  <script src="js/notification.js"></script>
   <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <!-- Font Awesome CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/timer.css">
+  <link rel="stylesheet" href="css/accordion.css">
+  <link rel="stylesheet" href="css/notification.css">
 </head>
 
 <body style="min-width: 380px">
@@ -244,70 +252,186 @@
 </div>
 
 <!-- contacts -->
+<!--form validation-->
 <div class="container-fluid backgr pb-5" id="apply">
-  <h2 class="text-center mt-0 pt-4 custom-lg-tab-size custom-sm-tab-size white-letters">Are you ready? Give your contacts</h2>
-  <form class="form-inline mx-auto w-50 d-flex flex-column justify-content-center">
-    <div class="form-group">
-      <label for="client-name">Your name:</label>
-      <input type="text"id="client-name" class="form-control" name="client-name" placeholder="name" required> <br>
+  <h2 class="text-center mt-0 pt-4 pb-5 custom-lg-tab-size custom-sm-tab-size white-letters">Are you ready? Give your contacts</h2>
+  <form class="mx-auto w-50 d-flex flex-column justify-content-center contactsForm" id="contactsForm">
+    <div class="myForm">
+      <input type="text"id="client-name"  name="client-name" placeholder="Name"  class="mt-2 mb-0 py-1 ps-4" data-reg="^[A-Za-zА-ЯЁа-яё]+$">
+      <p id="nameError" class="error ">Only letters</p>
     </div>
-    <div class="form-group">
-      <label for="client-number">Your telephone number:</label>
-      <input type="text"id="client-number" class="form-control" name="client-number" placeholder="number" required> <br>
+    <div class="myForm">
+      <input type="text"id="client-number"  name="client-number" placeholder="Number" class="mt-2 mb-0 py-1 ps-4" data-reg="^((\+7|7)+([0-9]){10})$">
+      <p id="numberError" class="error">In the +7XXXXXXXXXX or 7XXXXXXXXXX format</p>
     </div>
-    <div class="form-group">
-      <label for="client-number">Your email:</label>
-      <input type="text"id="client-email" class="form-control" name="client-email" placeholder="email" required> <br>
+    <div class="myForm">
+      <input type="text"id="client-email" name="client-email" placeholder="Email" class="mt-2 mb-0 py-1 ps-4" data-reg="[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$">
+      <p id="emailError" class="error">It should contain @ and a dot.</p>
     </div>
-    <button ype="submit" class="btn btn-warning mt-3 w-50 mx-auto">Sumbit</button>
+    <button type="submit" class="btn btn-warning mt-3 w-50 mx-auto contact-submit" id="contactsButton">SUBMIT</button>
   </form>
-  <p class="text-center mt-4">Or you can fill in a more detailed form <a href="#">here</a> if you know what you want.</p>
+  <p id="thanks" class="hidden text-center">Thank you for your request. We will contact you as soon as possible.</p>
+  <p class="text-center mt-4 ">You can fill in a more detailed form <a href="#">here</a> if you know what you want.</p>
+  <br>
 
-  <!-- faq -->
-  <h2 class="text-center mt-0 pt-4 mb-4
-  custom-lg-tab-size custom-sm-tab-size white-letters" id="faq" style="scroll-margin-top: 65px;">Frequently asked questions</h2>
-  <div class="row">
-    <div class="col-12">
-      <div class="accordion custom-c-lg-size custom-c-sm-size mx-auto" id="myAccordion">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-              1. What is your store? Is it a pet shelter?</button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse">
-            <div class="card-body">
-              <p>Our pet store is a unique combination of a store and a pet shelter. We take care of pets and give our customers
-              opportunity to meet with pets</p>
-            </div>
-          </div>
+  <!-- countdown timer -->
+  <h2 class="text-center mt-0 pt-4 pb-5 custom-lg-tab-size custom-sm-tab-size white-letters">When do you want to call us?</h2>
+<!--  <form id="user-timer">-->
+<!--    <div class="mx-auto my-auto">-->
+<!--      <label for="hours">hours</label>-->
+<!--      <input type="number" id="hours">-->
+<!--      <label for="minutes">minutes</label>-->
+<!--      <input type="number" id="minutes">-->
+<!--      <label for="seconds">seconds</label>-->
+<!--      <input type="number" id="seconds">-->
+<!--      <button type="submit" id="timer-submit">Go</button>-->
+<!--    </div>-->
+<!--  </form>-->
+
+  <div class="timer-container">
+    <div class="container-segment">
+      <div class="segment-title">Hours</div>
+      <div class="segment">
+        <div class="flip-card" data-hours-tens>
+          <div class="top">2</div>
+          <div class="bottom">2</div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">2. How can you help me to choose a pet?</button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse show">
-            <div class="card-body">
-              <p>We have 20 years experience in selection of pets. We have different ways for it. The basic one is a personality test.
-              Our questions consider a lot of factors that are very important in choosing a pet. Moreover, we always can consult you
-              and help you to choose an animal based on dialog with you</p>
-            </div>
-          </div>
+        <div class="flip-card" data-hours-ones>
+          <div class="top">4</div>
+          <div class="bottom">4</div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">3. Where is your store located?</button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse">
-            <div class="card-body">
-              <p>Our shelter is located in Astana. It is combines with pet store and locaten in Mangilik El avenue, 50.
-              We are open daily since 10:00 to 20:00</p>
-            </div>
-          </div>
+      </div>
+    </div>
+    <div class="container-segment">
+      <div class="segment-title">Minutes</div>
+      <div class="segment">
+        <div class="flip-card" data-minutes-tens>
+          <div class="top">0</div>
+          <div class="bottom">0</div>
+        </div>
+        <div class="flip-card" data-minutes-ones>
+          <div class="top">0</div>
+          <div class="bottom">0</div>
+        </div>
+      </div>
+    </div>
+    <div class="container-segment">
+      <div class="segment-title">Seconds</div>
+      <div class="segment">
+        <div class="flip-card" data-seconds-tens>
+          <div class="top">0</div>
+          <div class="bottom">0</div>
+        </div>
+        <div class="flip-card" data-seconds-ones>
+          <div class="top">0</div>
+          <div class="bottom">0</div>
         </div>
       </div>
     </div>
   </div>
+
+
+  <!--accordion-->
+  <!-- faq -->
+  <h2 class="text-center mt-0 pt-4 mb-4
+  custom-lg-tab-size custom-sm-tab-size white-letters" id="faq" style="scroll-margin-top: 65px;">Frequently asked questions</h2>
+
+  <div class="accordionDiv">
+    <button class="myAccordion">
+      ❓ What is your store? Is it a pet shelter?
+    </button>
+    <div class="panel">
+      <p>
+        Our pet store is a unique combination of a store and a pet shelter. We take care of pets and give our customers opportunity to meet with pets.
+      </p>
+    </div>
+
+    <button class="myAccordion"> ❓ How can you help me to choose a pet?</button>
+    <div class="panel">
+      <p>
+        We have 20 years experience in selection of pets. We have different ways for it. The basic one is a personality test.
+        Our questions consider a lot of factors that are very important in choosing a pet. Moreover, we always can consult you
+        and help you to choose an animal based on dialog with you
+      </p>
+    </div>
+
+    <button class="myAccordion"> ❓ Where is your store located?</button>
+    <div class="panel">
+      <p>
+        Our shelter is located in Astana. It is combines with pet store and located in Mangilik El avenue, 50.
+        We are open daily since 10:00 to 20:00
+      </p>
+    </div>
+  </div>
+
+
+
+  <h2 class="text-center mt-0 pt-4 custom-lg-tab-size custom-sm-tab-size white-letters">What should I do?</h2>
+
+  <!-- to-do-list -->
+
+  <section class="task-list custom-tasks-sm-size custom-tasks-lg-size">
+
+    <div id="tasks">
+      <div class="todo">
+        <div class="list-content">
+          <input type="text" class="todo-text custom-tasks-text-lg-size custom-tasks-text-sm-size" value="Submit your contacts" readonly>
+        </div>
+        <div class="todo-actions">
+          <button class="todo-edit">EDIT</button>
+          <button class="todo-done">DONE</button>
+          <button class="todo-delete">❌</button>
+        </div>
+      </div>
+
+      <div class="todo">
+        <div class="list-content">
+          <input type="text" class="todo-text custom-tasks-text-lg-size custom-tasks-text-sm-size" value="Find promo code" readonly>
+        </div>
+        <div class="todo-actions">
+          <button class="todo-edit">EDIT</button>
+          <button class="todo-done">DONE</button>
+          <button class="todo-delete">❌</button>
+        </div>
+      </div>
+
+      <div class="todo">
+        <div class="list-content">
+          <input type="text" class="todo-text custom-tasks-text-lg-size custom-tasks-text-sm-size" value="Call us" readonly>
+        </div>
+        <div class="todo-actions">
+          <button class="todo-edit">EDIT</button>
+          <button class="todo-done">DONE</button>
+          <button class="todo-delete">❌</button>
+        </div>
+      </div>
+
+      <div class="todo">
+        <div class="list-content">
+          <input type="text" class="todo-text custom-tasks-text-lg-size custom-tasks-text-sm-size" value="Visit our store" readonly>
+        </div>
+        <div class="todo-actions">
+          <button class="todo-edit">EDIT</button>
+          <button class="todo-done">DONE</button>
+          <button class="todo-delete">❌</button>
+        </div>
+      </div>
+
+    </div>
+    <form id="task-form" class="task-form">
+      <input type="text" id="new-task" class="new-task" placeholder="Something else? Maybe, choose your pet and buy it 🙂">
+      <input type="submit" value="Add" id="submit-task" class="submit-task">
+    </form>
+  </section>
+
+  <div class="funnydiv text-center">
+    <button type="submit" class="mt-4 funnybutton">Click me 🐹</button>
+  </div>
+
 </div>
+
+
+
 
 <!-- footer -->
 <footer class="myfooter container-fluid pe-1 ps-1 pt-2">
@@ -336,227 +460,6 @@
   <p class="text-center p-0 m-0 text-white" >©️No Copyright - <a href="https://pollybreak.github.io/Markup-of-Pet-Shop-website/">Pet Store "PetFriends"</a></p>
   </footer>
 </div>
-
-
-
-
-<!--<div class="wrapper">-->
-<!--  <section class="first-page">-->
-<!--    <div class="first-page-body">-->
-<!--      <h1 class="large-letters">Choose your pet with us <img class="heart" src= "https://emojigraph.org/media/whatsapp/sparkling-heart_1f496.png"> </h1>-->
-<!--      <h2><i>More than 600 pets attached to families</i></h2>-->
-<!--    </div>-->
-<!--    <div class="photos">-->
-<!--      <img id="hello-dog"src="https://i.pinimg.com/originals/6a/0a/df/6a0adfffb42a4f7a0a4af859501f462a.jpg" alt="cute puppy">-->
-<!--      <img id="hello-rabbit"src="https://celes.club/uploads/posts/2023-03/1679663490_celes-club-p-samie-milie-kroliki-v-mire-krasivo-60.jpg" alt="cute rabbit">-->
-<!--      <img id="hello-cat"src="https://img2.goodfon.ru/original/1024x1024/9/f5/kotenok-glaza-kote-vzglyad-fon-4871.jpg" alt="cute cat">-->
-<!--    </div>-->
-<!--  </section>-->
-<!--</div>-->
-
-<!--<div class="wrapper">-->
-<!--  <section class="second-page">-->
-<!--    <div class="second-page-body">-->
-<!--      <h1 class="contents">About us</h1>-->
-<!--      <div class="info">-->
-<!--        <section>-->
-<!--        <p id="about-us">-->
-<!--          We are an elite highly professional pet store. Our history dates back to 1998 when the first store was established in Akmola.-->
-<!--          The first priority of our company is <strong>pets</strong>. We have always been caring of our pets with love from our employees. The second priority is our-->
-<!--          <strong><em>clients</em></strong>.-->
-<!--          We help everyone to choose a pet for their families taking into account various factors such as a person's budget, personality, spare time, health etc. Our assistants-->
-<!--          provide detailed consultations and support at every step even after several years after purchase. Our variety of pets is incredible. There are different cats🐈 and-->
-<!--          dogs🐕 breeds, rabbits🐕, hamsters🐹, rats🐀, chinchillas🐭, turtles🐢, birds🐤 and parrots🦜 and much more in our store.-->
-<!--        </p>-->
-<!--        </section>-->
-<!--        <section>-->
-<!--        <h2 id="advantages">Our advantages</h2>-->
-<!--        <ol id="list-of-advantages">-->
-<!--          <li><p class="li-text">Wide variety of pets ✔️</p>-->
-<!--            <p class="li-text-desc">Starting from dogs and cats and ending with exotic ones.</p></li>-->
-<!--          <li><p class="li-text">Thorough and individual selection of a pet for each client ✔️</p>-->
-<!--            <p class="li-text-desc">We will consider all your wishes and even more. We will find the best animal for you-->
-<!--          depending on your personality</p></li>-->
-<!--          <li><p class="li-text">Constant support. Limitless amount of consultations ✔️</p>-->
-<!--            <p class="li-text-desc">We will tell you everything about your pet, explain how to take care of it and will help you in future with any of your questions</p></li>-->
-<!--        </ol>-->
-<!--        </section>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </section>-->
-<!--</div>-->
-
-<!--<div class="wrapper">-->
-<!--  <section class="third-page">-->
-<!--    <div class="third-page-body">-->
-<!--      <h1 class="contents">Prices</h1>-->
-<!--      <div class="prices-background">-->
-<!--        <h2>We offer three service packages depending on your needs ❤️</h2>-->
-<!--        <table class="prices-table">-->
-<!--          <tr>-->
-<!--            <th></th>-->
-<!--            <th>Light</th>-->
-<!--            <th>Standard</th>-->
-<!--            <th>Lux</th>-->
-<!--          </tr>-->
-<!--          <tr>-->
-<!--            <th> Individual selection of 1 pet with the help of special testing</th>-->
-<!--            <td>✔️</td>-->
-<!--            <td>✔️</td>-->
-<!--            <td>✔️</td>-->
-<!--          </tr>-->
-<!--          <tr>-->
-<!--            <th>The choice of any pet present now</th>-->
-<!--            <td>✔️</td>-->
-<!--            <td>✔️</td>-->
-<!--            <td>✔️</td>-->
-<!--          </tr>-->
-<!--          <tr>-->
-<!--            <th>Basic course how to take care of your pet</th>-->
-<!--            <td>✔️</td>-->
-<!--            <td>✔️</td>-->
-<!--            <td>✔️</td>-->
-<!--          </tr>-->
-<!--          <tr>-->
-<!--            <th>Constant support from 1 assistant</th>-->
-<!--            <td>❌</td>-->
-<!--            <td>✔️</td>-->
-<!--            <td>✔️</td>-->
-<!--          </tr>-->
-<!--          <tr>-->
-<!--            <th>All necessary vaccinates if desired</th>-->
-<!--            <td>❌</td>-->
-<!--            <td>✔️</td>-->
-<!--            <td>✔️</td>-->
-<!--          </tr>-->
-<!--          <tr>-->
-<!--            <th>Ordering a specific pet from anywhere in the world</th>-->
-<!--            <td>❌</td>-->
-<!--            <td>❌️</td>-->
-<!--            <td>✔️</td>-->
-<!--          </tr>-->
-<!--          <tr>-->
-<!--            <th>Free treatment in our veterinary clinic</th>-->
-<!--            <td>❌</td>-->
-<!--            <td>❌️</td>-->
-<!--            <td>✔️</td>-->
-<!--          </tr>-->
-<!--          <tr>-->
-<!--            <th></th>-->
-<!--            <td>15000&#8376;*</td>-->
-<!--            <td>30000&#8376;*</td>-->
-<!--            <td>60000&#8376;*</td>-->
-<!--          </tr>-->
-<!--        </table>-->
-<!--        <p>* - This price does not include a pet cost. Our pet costs correspond to the market. You can find them <a href="">here</a>.</p>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </section>-->
-<!--</div>-->
-
-<!--<div class="wrapper">-->
-<!--  <section class="fourth-page">-->
-<!--    <div class="fourth-page-body">-->
-<!--      <h1 class="apply"> <img class="heart" src= "https://emojigraph.org/media/twitter/paw-prints_1f43e.png"> Send a request and get a free trial consultation</h1>-->
-<!--      <hr>-->
-<!--      <form>-->
-<!--        <div class="apply-form">-->
-<!--          <div class="contacts">-->
-<!--          <h2>Your contacts </h2>-->
-<!--          <label for="client-name">Your name:</label>-->
-<!--          <input type="text"id="client-name" name="client-name" placeholder="name" required> <br>-->
-<!--          <label for="client-number">Your telephone number:</label>-->
-<!--          <input type="text"id="client-number" name="client-number" placeholder="number" required> <br>-->
-<!--          <label for="client-number">Your email:</label>-->
-<!--          <input type="text"id="client-email" name="client-email" placeholder="email" required> <br>-->
-<!--          <label for="client-city">Location</label>-->
-<!--          <select id="client-city" name="client-city" placeholder="Choose your city" required>-->
-<!--            <option value="Aktau">Aktau</option>-->
-<!--            <option value="Aktobe">Aktobe</option>-->
-<!--            <option value="Almaty">Almaty</option>-->
-<!--            <option value="Astana">Astana</option>-->
-<!--            <option value="Karaganda">Karaganda</option>-->
-<!--            <option value="Kostanay">Kostanay</option>-->
-<!--            <option value="Pavlodar">Pavlodar</option>-->
-<!--            <option value="Petropavl">Petropavl</option>-->
-<!--            <option value="Semey">Semey</option>-->
-<!--            <option value="Taraz">Taraz</option>-->
-<!--            <option value="Shymkent">Shymkent</option>-->
-<!--            <option value="other">Other</option>-->
-<!--          </select>-->
-<!--          <fieldset>-->
-<!--            <legend>How is the best way to contact with you?</legend>-->
-<!--            <label><input id="call" type="radio" name="contact-way" value="call" checked> Telephone call</label>-->
-<!--            <label><input id="telegram" type="radio" name="contact-way" value="telegram"> Telegram</label>-->
-<!--            <label><input id="whatsap" type="radio" name="contact-way" value="whatsap"> WhatsApp</label>-->
-<!--            <label><input id="email" type="radio" name="contact-way" value="email"> Email</label>-->
-<!--          </fieldset>-->
-<!--          <fieldset>-->
-<!--            <legend>Choose the best time to contact with you</legend>-->
-<!--            <label><input id="now" type="checkbox" name="contact-time" value="now"> As soon as possible</label>-->
-<!--            <label><input id="morning" type="checkbox" name="contact-time" value="morning">In the morning</label>-->
-<!--            <label><input id="afternoon" type="checkbox" name="contact-time" value="afternoon">In the afternoon</label>-->
-<!--            <label><input id="evening" type="checkbox" name="contact-time" value="evening">In the evening</label>-->
-<!--          </fieldset>-->
-<!--        </div>-->
-<!--          <div class="extra-form">-->
-<!--            <h2>Additional information</h2>-->
-<!--            <p>This section is optional. You can fill it if you want us to pick up a pet for you previously</p>-->
-<!--            <fieldset>-->
-<!--              <legend>What pet do you want?</legend>-->
-<!--              <label><input id="cat" type="radio" name="pet" value="cat"> Cat🐈</label>-->
-<!--              <label><input id="dog" type="radio" name="pet" value="dog">Dog🐕</label>-->
-<!--              <label><input id="bird" type="radio" name="pet" value="bird">Bird or parrot🦜</label>-->
-<!--              <label><input id="rodent" type="radio" name="pet" value="rodent">Rodent🐹</label>-->
-<!--              <label><input id="lizard" type="radio" name="pet" value="lizard">Snake or lizard🦎</label>-->
-<!--              <label><input id="turtle" type="radio" name="pet" value="turtle">Turtle🐢</label>-->
-<!--              <label><input id="exotic" type="radio" name="pet" value="exotic">Some exotic🦔</label>-->
-<!--              <label><input id="idk" type="radio" name="pet" value="idk">I don't know yet🤷‍♀️</label>-->
-<!--            </fieldset>-->
-<!--            <fieldset>-->
-<!--              <legend>How do you describe your personality?</legend>-->
-<!--              <label><input id="agressive" type="checkbox" name="trait" value="agressive"> Agressive</label>-->
-<!--              <label><input id="rational" type="checkbox" name="trait" value="rational">Rational</label>-->
-<!--              <label><input id="empathy" type="checkbox" name="trait" value="empathy">Empathy</label>-->
-<!--              <label><input id="logical" type="checkbox" name="trait" value="logical">Logical</label>-->
-<!--              <label><input id="careful" type="checkbox" name="trait" value="careful">Careful</label>-->
-<!--              <label><input id="confident" type="checkbox" name="trait" value="confident">Confident</label>-->
-<!--              <label><input id="creative" type="checkbox" name="trait" value="creative">Creative</label>-->
-<!--              <label><input id="energetic" type="checkbox" name="trait" value="energetic">Energetic</label>-->
-<!--              <label><input id="perfectionist " type="checkbox" name="trait" value="perfectionist ">Perfectionist </label>-->
-<!--              <label><input id="pragmatic" type="checkbox" name="trait" value="pragmatic">Pragmatic</label>-->
-<!--              <label><input id="quiet" type="checkbox" name="trait" value="quiet">Quiet</label>-->
-<!--              <label><input id="sociable" type="checkbox" name="trait" value="sociable">Sociable</label>-->
-<!--            </fieldset>-->
-<!--            <fieldset>-->
-<!--              <legend>How much time do you want to take care of your pet<b> a day</b> </legend>-->
-<!--              <label><input id="nothing" type="radio" name="time" value="nothing"> 0-15 minutes</label>-->
-<!--              <label><input id="a-bit" type="radio" name="time" value="a-bit">15-30 minutes</label>-->
-<!--              <label><input id="okey" type="radio" name="time" value="okey">30-60 minutes</label>-->
-<!--              <label><input id="excellent" type="radio" name="time" value="excellent">1-2 hours</label>-->
-<!--              <label><input id="wow" type="radio" name="time" value="wow">More 2 hours</label>-->
-<!--            </fieldset>-->
-<!--            <fieldset>-->
-<!--            <legend>Do you need an opportunity to leave a pet alone for a couple of days?</b> </legend>-->
-<!--            <label><input id="yes" type="radio" name="alone" value="yes">Yes</label>-->
-<!--            <label><input id="no" type="radio" name="alone" value="no">No</label>-->
-<!--            </fieldset> <br>-->
-<!--            <label for="wish">Wishes if you have</label>-->
-<!--            <input type="text" id="wish" name="wish" placeholder="write everything you want">-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <button id="submit-button" type="Submit">Contact</button>-->
-<!--      </form>-->
-<!--    </div>-->
-<!--  </section>-->
-<!--</div>-->
-<!--<footer>-->
-<!--    <a href="https://www.instagram.com/polinaster.13/"><img id="insta" src="https://img.icons8.com/fluency/48/instagram-new.png"></a>-->
-<!--    <p>©️No Copyright - <a href="">Pet Store "Friends"</a> Founder - <a href="https://t.me/spasibo_chto_pozvali">Polina Batova</a> </p>-->
-<!--    <p>Mangilik El avenue, 55/11-->
-<!--      Business center EXPO, block C1-->
-<!--      Astana, Kazakhstan, 010000</p>-->
-<!--</footer>-->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
