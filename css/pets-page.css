@@ -40,7 +40,7 @@
 }
 
 .pets-nav a{
-  font-size: 2vw;
+  font-size: 1.5rem;
   color:saddlebrown;
 }
 .pets-nav a:hover{
@@ -76,4 +76,54 @@
 
 .custom-row-size {
   width: 95vw;
+}
+
+.need-tooltip {
+  position: relative;
+  background: orange;
+  padding: 5px  15px;
+  margin: 5px;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  color: white;
+}
+
+
+*[data-descr] {
+  color: white;
+  cursor: help;
+}
+
+.invisible {
+  display: none;
+}
+
+.myTooltip {
+  position: absolute;
+  background-color: #FDB44E;
+  color: black;
+  border: white;
+  border-radius: 7px;
+  padding: 3px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  .custom-sm-text-with-tooltip {
+    margin-left: 30%;
+  }
+}
+
+@media (min-width: 576px) {
+  .custom-lg-text-with-tooltip {
+    margin-left: 40%;
+  }
+}
+
+.tooltip-size{
+  font-size: 1.5rem;
 }
