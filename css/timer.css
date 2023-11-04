@@ -69,7 +69,7 @@
   margin-top: 30px;
   margin-bottom: 20px;
   display: flex;
-  gap: .5em;
+  gap: .6em;
   justify-content: center;
 }
 
@@ -90,7 +90,6 @@
 }
 
 .timer-input{
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -100,7 +99,20 @@
   border: black;
   border-radius: 0.5rem;
   margin-right: 6px;
-  width: 7%;
+}
+
+@media (min-width: 800px) {
+  .custom-input-number-lg-size {
+    width: 10%;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .custom-input-number-sm-size {
+    width: 20%;
+    font-size: 1rem;
+  }
 }
 
 #start-timer {
@@ -112,4 +124,19 @@
 
 .hidden {
   display: none !important;
+}
+
+@media (max-width: 576px) {
+  .flip-card .top,
+  .flip-card .bottom,
+  .flip-card .top-flip,
+  .flip-card .bottom-flip {
+    font-size: 2rem; /* Уменьшите размер шрифта на маленьких экранах */
+  }
+}
+
+@media (max-width: 576px) {
+  .flip-card {
+    flex-direction: column; /* Измените направление контейнера на вертикальное */
+  }
 }

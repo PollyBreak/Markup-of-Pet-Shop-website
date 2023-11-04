@@ -380,6 +380,19 @@ a:hover{
   -webkit-text-fill-color: transparent;
 }
 
+@media (min-width: 576px) {
+  .custom-contactsForm-lg-size {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-contactsForm-sm-size {
+    width: 85%;
+  }
+}
+
+
 .myForm input {
   /*display: block;*/
   width: 100%;
@@ -402,6 +415,7 @@ a:hover{
 
 .contact-submit {
   font-size: 1.5rem;
+  width: 60%;
 }
 
 .hidden {

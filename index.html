@@ -255,7 +255,7 @@
 <!--form validation-->
 <div class="container-fluid backgr pb-5" id="apply">
   <h2 class="text-center mt-0 pt-4 pb-5 custom-lg-tab-size custom-sm-tab-size white-letters">Are you ready? Give your contacts</h2>
-  <form class="mx-auto w-50 d-flex flex-column justify-content-center contactsForm" id="contactsForm">
+  <form class="mx-auto d-flex flex-column justify-content-center custom-contactsForm-lg-size custom-contactsForm-sm-size" id="contactsForm">
     <div class="myForm">
       <input type="text"id="client-name"  name="client-name" placeholder="Name"  class="mt-2 mb-0 py-1 ps-4" data-reg="^[A-Za-zА-ЯЁа-яё]+$">
       <p id="nameError" class="error ">Only letters</p>
@@ -268,7 +268,7 @@
       <input type="text"id="client-email" name="client-email" placeholder="Email" class="mt-2 mb-0 py-1 ps-4" data-reg="[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$">
       <p id="emailError" class="error">It should contain @ and a dot.</p>
     </div>
-    <button type="submit" class="btn btn-warning mt-3 w-50 mx-auto contact-submit" id="contactsButton">SUBMIT</button>
+    <button type="submit" class="btn btn-warning mt-3  mx-auto contact-submit " id="contactsButton">SUBMIT</button>
   </form>
   <p id="thanks" class="hidden text-center">Thank you for your request. We will contact you as soon as possible.</p>
   <p class="text-center mt-4 ">You can fill in a more detailed form <a href="#">here</a> if you know what you want.</p>
@@ -278,9 +278,9 @@
   <h2 class="text-center mt-0 pt-4 pb-5 custom-lg-tab-size custom-sm-tab-size white-letters">When do you want to call us?</h2>
 
   <div class="d-flex timer-input justify-content-center">
-    <input type="number" class="input-number" id="hours-input" placeholder="Hours" min="0" max="23">
-    <input type="number" class="input-number" id="minutes-input" placeholder="Minutes" min="0" max="59">
-    <input type="number" class="input-number" id="seconds-input" placeholder="Seconds" min="0" max="59">
+    <input type="number" class="input-number custom-input-number-lg-size custom-input-number-sm-size" id="hours-input" placeholder="Hours" min="0" max="23">
+    <input type="number" class="input-number custom-input-number-lg-size custom-input-number-sm-size" id="minutes-input" placeholder="Minutes" min="0" max="59">
+    <input type="number" class="input-number custom-input-number-lg-size custom-input-number-sm-size" id="seconds-input" placeholder="Seconds" min="0" max="59">
     <button id="start-timer">Start Timer</button>
   </div>
 
