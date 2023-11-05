@@ -127,3 +127,17 @@
 .tooltip-size{
   font-size: 1.5rem;
 }
+
+
+@media (max-width: 576px) {
+  .custom-sm-rodents-size {
+    font-family: Georgia;
+    font-size: 15vw;
+  }
+}
+
+.animation-container {
+  width: 100%;
+  overflow: hidden;
+}
+

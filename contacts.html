@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/contacts-page.css">
+  <script src="js/call-animation.js"></script>
+  <script src="js/puzzle.js"></script>
 </head>
 
 
@@ -49,8 +51,13 @@
 </nav>
 
 <div class="container-fluid backgr pb-3">
-  <h1 class="text-center text-shadow text-white pt-4 mb-4 ps-0 pe-0 pt-0
-  custom-lg-hd-size custom-sm-hd-size">Contacts</h1>
+
+  <div class="flex-container custom-lg-text-with-tooltip custom-lg-text-with-tooltip justify-content-center">
+    <h1 class="text-center text-shadow text-white pt-4 mb-4 ps-0 pe-0 pt-0
+    custom-lg-hd-size custom-sm-hd-size">Contacts</h1>
+    <p><img src="img/1663631849_11-mykaleidoscope-ru-p-zloi-dzhek-rassel-instagram-12.png"
+            width="150px" height="130px" id="callDogSign"></p>
+  </div>
   <div class="d-block d-flex justify-content-center">
     <div>
       <p class="custom-sm-text-size custom-lg-text-size p-0">Our store is open to any contacts by any means convenient to you</p>
@@ -79,9 +86,9 @@
   <h1 class="text-center text-shadow text-white mt-4 mb-4 ps-0 pe-0 pt-0
   custom-lg-hd-size custom-sm-hd-size">Offline store in Astana</h1>
   <div class="row">
-    <div class="col-lg-5 col-12 d-flex align-items-center " style="height: 90vh">
+    <div class="col-lg-5 col-12 d-flex align-items-center " >
       <div class="text-center m-0">
-        <p class=" custom-lg-text-size p-0">Our offline store in Astana is not just a pet shop.
+        <p class=" custom-lg-text-size p-0 mt-2">Our offline store in Astana is not just a pet shop.
           It's a real pet shelter whose area covers more than 700
           square metres. We are always glad to see our customer. You can visit us and our assistants will consult and answer
           all the important questions for you. Not all pets are freely available in the shop permanently. Pets come to halls
@@ -100,6 +107,13 @@
       <img class="img-fluid pe-0 ps-0" src="img/zoo-2.jpg" style="height: 100%; object-fit: cover">
     </div>
   </div>
+
+  <br>
+  <div id="board"></div>
+  <h2>Turns: <span id="turns">0</span></h2>
+  <div id="pieces"></div>
+
+
 </div>
 
 <footer class="myfooter container-fluid pe-1 ps-1 pt-2">

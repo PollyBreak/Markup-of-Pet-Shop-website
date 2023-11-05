@@ -11,6 +11,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/pets-page.css">
   <script src="js/tooltip.js"></script>
+  <script src="js/tab-keypress.js"></script>
+  <script src="js/sounds.js"></script>
+  <script src="js/dog-animation.js"></script>
 </head>
 
 <body style="min-width: 350px">
@@ -196,11 +199,18 @@
 
 
   <!-- pets -->
-  <div class="container-fluid backgr px-lg-5 px-1 py-3">
+  <div class="container-fluid backgr px-lg-5 px-1 py-3 mb-0 mt-0 pets">
+
+    <audio id="catSound">
+      <source src="cats-meow-2_mktkaweu.mp3" type="audio/mpeg">
+    </audio>
 
     <div class="flex-container custom-lg-text-with-tooltip custom-lg-text-with-tooltip">
       <h1 class="text-white text-shadow text-center custom-lg-tab-size custom-sm-tab-size scrolled" id="cats">Cats </h1>
-      <p class="tooltip-size"><span data-descr="hello, I am tooltip!">🐈❓</span></p>
+      <p class="tooltip-size"><span
+        data-descr="Cats are ideal companions for people who appreciate independent yet affectionate pets.
+        They require minimal grooming and are well-suited to individuals with busy lifestyles.">
+        🐈❓</span></p>
     </div>
 
     <div>
@@ -225,7 +235,7 @@
       <div class="tab-content">
         <!-- all cats-->
         <div class="tab-pane fade show active" id="all">
-          <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 custom-row-size mx-auto">
+          <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 custom-row-size mx-auto pe-4">
             <div class="col-lg col-md-4 col-6 mb-4 mx-0 px-md-2 px-0">
               <div class="card">
                 <img class="card-img-top" src="img/cats/lh-russian.jpeg" alt="russian cat">
@@ -365,7 +375,7 @@
         </div>
         <!-- longhair cats -->
         <div class="tab-pane fade" id="long">
-          <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 custom-row-size mx-auto">
+          <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 custom-row-size mx-auto pe-4">
             <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
               <div class="card">
                 <img class="card-img-top" src="img/cats/lh-hima.jpg" alt="Himalayan">
@@ -397,7 +407,7 @@
         </div>
         <!-- semilong hair cats-->
         <div class="tab-pane fade" id="semilong">
-          <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 custom-row-size mx-auto">
+          <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 custom-row-size mx-auto pe-4">
             <div class="col-lg col-4 mb-4 mx-0 px-md-2 px-0">
               <div class="card">
                 <img class="card-img-top" src="img/cats/slh-rag.jpg" alt="Ragdoll">
@@ -430,7 +440,7 @@
 
         <!-- short hair cats-->
         <div class="tab-pane fade" id="short">
-          <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 custom-row-size mx-auto">
+          <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 custom-row-size mx-auto pe-4">
             <div class="col-lg col-md-4 col-6 mb-4 mx-0 px-md-2 px-0">
               <div class="card">
                 <img class="card-img-top" src="img/cats/sh-chartr.jpg" alt="Chartreux">
@@ -488,7 +498,7 @@
           </div>
         </div>
         <div class="tab-pane fade" id="siam">
-          <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 custom-row-size mx-auto">
+          <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 custom-row-size mx-auto pe-4">
             <div class="col-lg col-md-4 col-6 mb-4 mx-0 px-md-2 px-00">
               <div class="card">
                 <img class="card-img-top" src="img/cats/s-siam.jpg" alt="Siamese">
@@ -521,11 +531,27 @@
       </div>
     </div>
 
+  </div>
+
+
 
     <!-- Dogs -->
 
-    <h1 class="text-white text-shadow text-center hd-text-size scrolled
-    custom-lg-tab-size custom-sm-tab-size" id="dogs">Dogs</h1>
+  <div class="container-fluid backgr px-lg-5 px-1 py-3 mb-0 mt-0 pets">
+
+    <audio id="dogSound">
+      <source src="dog-bark-2.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="flex-container custom-lg-text-with-tooltip custom-lg-text-with-tooltip">
+      <h1 class="text-white text-shadow text-center
+      custom-lg-tab-size custom-sm-tab-size scrolled" id="dogs">Dogs </h1>
+      <p class="tooltip-size"><span
+        data-descr="Dogs make wonderful companions for
+        those seeking loyal and active pets, requiring regular exercise and attention.">
+        🐕❓</span></p>
+    </div>
+
     <div>
       <ul class="nav nav-tabs" id="dogs-tab">
         <li class="nav-item pets-nav">
@@ -544,7 +570,7 @@
 
       <div class="tab-content">
         <div class="tab-pane fade show active" id="all-dogs">
-          <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 custom-row-size mx-auto">
+          <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 custom-row-size mx-auto pe-4">
             <div class="col-lg col-md-4 col-6 mb-4 mx-0 px-md-2 px-0">
               <div class="card">
                 <img class="card-img-top" src="img/dogs/lg-akita.jpg" alt="Akita">
@@ -685,7 +711,7 @@
 
         <!-- small dogs -->
         <div class="tab-pane fade" id="small">
-          <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 custom-row-size mx-auto">
+          <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 custom-row-size mx-auto pe-4">
             <div class="col-lg col-md-4 col-6 mb-4 mx-0 px-md-2 px-0">
               <div class="card">
                 <img class="card-img-top" src="img/dogs/sm-bishon-frise.jpg" alt="Bichon frise">
@@ -756,7 +782,7 @@
 
         <!-- middle dogs-->
         <div class="tab-pane fade" id="medium">
-          <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 custom-row-size mx-auto">
+          <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 custom-row-size mx-auto pe-4">
             <div class="col-lg col-md-4 col-6 mb-4 mx-0 px-md-2 px-0">
               <div class="card">
                 <img class="card-img-top" src="img/dogs/md-kli.jpg" alt="Alaskan Klee Kai">
@@ -798,7 +824,7 @@
 
         <!-- large dogs-->
         <div class="tab-pane fade" id="large">
-          <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 custom-row-size mx-auto">
+          <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 custom-row-size mx-auto pe-4">
             <div class="col-lg col-md-4 col-6 mb-4 mx-0 px-md-2 px-0">
               <div class="card">
                 <img class="card-img-top" src="img/dogs/lg-husky.jpeg" alt="Siberian Husky">
@@ -839,11 +865,20 @@
         </div>
       </div>
     </div>
+  </div>
 
+  <div class="container-fluid backgr px-lg-5 px-1 py-3 mb-0 mt-0 pets" id="otherPets">
     <!-- Birds -->
-    <h1 class="text-white text-shadow text-center hd-text-size mb-4 scrolled
-    custom-lg-tab-size custom-sm-tab-size" id="birds">Birds</h1>
-    <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 custom-row-size mx-auto">
+    <div class="flex-container custom-lg-text-with-tooltip custom-lg-text-with-tooltip">
+      <h1 class="text-white text-shadow text-center custom-lg-tab-size
+      custom-sm-tab-size scrolled" id="birds">Birds </h1>
+      <p class="tooltip-size"><span
+        data-descr="Birds are charming and social creatures, making them great pets for individuals
+        who enjoy vibrant, interactive companions that require minimal space.">
+        🐦❓</span></p>
+    </div>
+
+    <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 custom-row-size mx-auto pe-4">
       <div class="col-lg col-md-4 col-6 mb-4 mx-0 px-md-2 px-0">
         <div class="card">
           <img class="card-img-top" src="img/birds/canary.jpg" alt="Domestic canary">
@@ -892,9 +927,17 @@
     </div>
 
     <!--Rodents and hares-->
-    <h1 class="text-white text-shadow text-center hd-text-size mb-4 scrolled
-    custom-lg-tab-size custom-sm-tab-size" id="rodents">Rodents and rabbits</h1>
-    <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 custom-row-size mx-auto">
+
+    <div class="flex-container custom-lg-text-with-tooltip custom-lg-text-with-tooltip">
+      <h1 class="text-white text-shadow text-center custom-lg-tab-size
+      custom-sm-rodents-size scrolled" id="rodents">Rodents </h1>
+      <p class="tooltip-size"><span
+        data-descr="Rodents are low-maintenance pets, perfect for those seeking small, friendly
+        animals that don't demand extensive care, making them a great option for busy households.">
+        🐹❓</span></p>
+    </div>
+
+    <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 custom-row-size mx-auto pe-4">
       <div class="col-lg col-md-4 col-6 mb-4 mx-0 px-md-2 px-0">
         <div class="card">
           <img class="card-img-top" src="img/rods/hares.jpg" alt="Rabbits">
@@ -945,9 +988,18 @@
     </div>
 
     <!--Reptiles-->
-    <h1 class="text-white text-shadow text-center hd-text-size mb-4 scrolled
-    custom-lg-tab-size custom-sm-tab-size" id="reptiles">Reptiles</h1>
-    <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 custom-row-size mx-auto">
+
+    <div class="flex-container custom-lg-text-with-tooltip custom-lg-text-with-tooltip">
+      <h1 class="text-white text-shadow text-center custom-lg-tab-size
+       custom-sm-rodents-size scrolled" id="reptiles">Reptiles </h1>
+      <p class="tooltip-size"><span
+        data-descr="Reptiles can be ideal pets for those who appreciate unique and low-maintenance companions.
+        They are a great choice for people seeking intriguing, cold-blooded animals that don't require much
+        attention or space.">
+        🐢❓</span></p>
+    </div>
+
+    <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 custom-row-size mx-auto pe-4">
       <div class="col-lg col-md-4 col-6 mb-4 mx-0 px-md-2 px-0">
         <div class="card">
           <img class="card-img-top" src="img/pond-slider.jpg" alt="Pond slider">
@@ -994,6 +1046,14 @@
         </div>
       </div>
     </div>
+
+
+    <div class="animation-container">
+      <img src="animal-dog.gif"
+           height="200px"
+           width="200px" id="animatedDog"/>
+    </div>
+
   </div>
 
   <footer class="myfooter container-fluid pe-1 ps-1 pt-2">
