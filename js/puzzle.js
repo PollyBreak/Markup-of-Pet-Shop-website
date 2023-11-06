@@ -1,4 +1,4 @@
-
+document.addEventListener('DOMContentLoaded', () => {
   const puzzleSize = 3;
   const puzzleHighliht = '#000099';
   var ctx, canvas, img, pieces, mainWidth, mainHeight, pieceWidth, pieceHeight, currentPiece, currentDroppedPiece, mouse;
@@ -206,3 +206,8 @@
     for (var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
     return o;
   }
+
+
+  init();
+
+});
