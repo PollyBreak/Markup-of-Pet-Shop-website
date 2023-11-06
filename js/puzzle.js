@@ -1,3 +1,4 @@
+
   const puzzleSize = 3;
   const puzzleHighliht = '#000099';
   var ctx, canvas, img, pieces, mainWidth, mainHeight, pieceWidth, pieceHeight, currentPiece, currentDroppedPiece, mouse;
