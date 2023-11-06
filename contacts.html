@@ -15,7 +15,7 @@
 </head>
 
 
-<body style="min-width: 350px">
+<body style="min-width: 350px" onload="init();">
 
 <nav class="navbar navbar-expand-lg navbar-light sticky-top" >
   <div class="container-fluid">
@@ -100,7 +100,7 @@
         <p class="custom-sm-text-size custom-lg-text-size p-0">Every day 10:00 to 20:00</p>
         <h3>Telephone</h3>
         <p class="custom-sm-text-size custom-lg-text-size p-0">+77054004032</p>
-        <h1>See you!</h1>
+        <h4>See you!</h4>
       </div>
     </div>
     <div class="col-sm-7 d-none d-lg-block pe-0 ps-0 me-0" style="height: 90vh">
@@ -109,11 +109,11 @@
   </div>
 
   <br>
-  <div id="board"></div>
-  <h2>Turns: <span id="turns">0</span></h2>
-  <div id="pieces"></div>
-
-
+  <div id="puzzleDiv" class="d-flex flex-column justify-content-center">
+    <h1 class="text-center">Solve the puzzle to get a present</h1>
+    <canvas id="canvas" class="mx-auto"></canvas>
+    <script>var i = 1;</script>
+  </div>
 </div>
 
 <footer class="myfooter container-fluid pe-1 ps-1 pt-2">
