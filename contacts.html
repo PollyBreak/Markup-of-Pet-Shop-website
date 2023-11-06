@@ -15,7 +15,7 @@
 </head>
 
 
-<body style="min-width: 350px">
+<body style="min-width: 350px" onload="init();">
 
 <nav class="navbar navbar-expand-lg navbar-light sticky-top" >
   <div class="container-fluid">
@@ -110,10 +110,10 @@
 
   <br>
   <div id="puzzleDiv" class="flex-column justify-content-center">
-    <h1 class="text-center"></h1>
+    <h1 class="text-center">Solve puzzle to get a present</h1>
     <canvas id="canvas" class="mx-auto"></canvas>
-    <script>
-      var i = 1;</script>
+    <script>init();
+    var i = 1;</script>
   </div>
 
 </div>
