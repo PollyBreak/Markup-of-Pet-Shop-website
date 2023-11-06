@@ -14,14 +14,12 @@
 
     }
   }
-
-
   window.addEventListener('resize', function () {
     var screenWidth = window.innerWidth;
     if (screenWidth > 600) {
       img.src = "/img/main-qimg-1a81d936933b949a8d4e9be3430fcaf9-c.jpg";
       img.addEventListener('load',onImage,false)
-      document.getElementById("puzzleDiv").style.display='block';
+      document.getElementById("puzzleDiv").style.display='flex';
     }
     else {
       document.getElementById("puzzleDiv").style.display='none'
