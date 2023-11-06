@@ -9,6 +9,7 @@
     if (screenWidth > 550) {
       img.src = "/img/main-qimg-1a81d936933b949a8d4e9be3430fcaf9-c.jpg";
       img.addEventListener('load',onImage,false);
+      document.getElementById("puzzleDiv").style.display='flex';
     }
     else {
 
