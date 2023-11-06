@@ -14,6 +14,8 @@
   <script src="js/tab-keypress.js"></script>
   <script src="js/sounds.js"></script>
   <script src="js/dog-animation.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <script src="js/char.js"></script>
 </head>
 
 <body style="min-width: 350px">
@@ -1053,6 +1055,13 @@
            height="200px"
            width="200px" id="animatedDog"/>
     </div>
+
+    <div class="d-flex flex-column justify-content-center">
+      <h1 class="text-center">Current number of animals in our store</h1>
+      <canvas id="myChart" style="width:100%;max-width:700px" class="mx-auto"></canvas>
+    </div>
+
+
 
   </div>
 
