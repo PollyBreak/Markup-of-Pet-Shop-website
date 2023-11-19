@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     img = new Image();
     var screenWidth = window.innerWidth;
     if (screenWidth > 550) {
-      img.src = "/img/main-qimg-1a81d936933b949a8d4e9be3430fcaf9-c.jpg";
+      img.src = "/img/puzzle1.JPG";
       img.addEventListener('load',onImage,false);
       document.getElementById("puzzleDiv").style.display='flex';
     }
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('resize', function () {
     var screenWidth = window.innerWidth;
     if (screenWidth > 600) {
-      img.src = "/img/main-qimg-1a81d936933b949a8d4e9be3430fcaf9-c.jpg";
+      img.src = "/img/puzzle1.JPG";
       img.addEventListener('load',onImage,false)
       document.getElementById("puzzleDiv").style.display='flex';
     }
