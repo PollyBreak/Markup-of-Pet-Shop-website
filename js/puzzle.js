@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ctx.fillStyle = "#000000";
     ctx.globalAlpha = .5;
     // ctx.fillRect (100,mainHeight - 40,mainWidth - 200,40);
-    ctx.fillStyle = "#FFFFFF";
+    ctx.fillStyle = "#000000";
     ctx.globalAlpha = 1;
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
